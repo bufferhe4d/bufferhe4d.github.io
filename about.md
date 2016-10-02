@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Bufferhe4d's Blog - About
 permalink: /about/
 ---
 
