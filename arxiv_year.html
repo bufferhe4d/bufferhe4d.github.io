@@ -1,0 +1,78 @@
+
+
+
+<html>
+    <head>
+        <title>arXiv by year</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    </head>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("frm1");
+            console.log(x.elements[0].value)
+            console.log(x.elements[1].value)
+            window.location.href = `https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=${x.elements[0].value}&terms-0-field=all&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=specific_year&date-year=${x.elements[1].value}&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=hide&size=50&order=-announced_date_first`;
+        }
+    </script>
+    <body>
+        
+        <div class="container">
+            <h2>Arxiv Redirector</h2>
+            <p>
+                This is a simple redirection tool for displaying specific arxiv subfields by year.
+            </p>
+            <form id="frm1" >
+                <label for="sub-select">Subfield:</label>
+    
+            <select name="subs" id="sub-select">
+                <option value="cs.CR">Cryptography and Security</option>
+                <option value="cs.AI">Artificial Intelligence</option>
+                <option value="cs.AR">Hardware Architecture</option>
+                <option value="cs.CC">Computational Complexity</option>
+                <option value="cs.CE">Computational Engineering, Finance, and Science</option>
+                <option value="cs.CG">Computational Geometry</option>
+                <option value="cs.CL">Computation and Language</option>
+                <option value="cs.CV">Computer Vision and Pattern Recognition</option>
+                <option value="cs.CY">Computers and Society</option>
+                <option value="cs.DB">Databases</option>
+                <option value="cs.DC">Distributed, Parallel, and Cluster Computing</option>
+                <option value="cs.DL">Digital Libraries</option>
+                <option value="cs.DM">Discrete Mathematics</option>
+                <option value="cs.DS">Data Structures and Algorithms</option>
+                <option value="cs.ET">Emerging Technologies</option>
+                <option value="cs.FL">Formal Languages and Automata Theory</option>
+                <option value="cs.GL">General Literature</option>
+                <option value="cs.GR">Graphics</option>
+                <option value="cs.GT">Computer Science and Game Theory</option>
+                <option value="cs.HC">Human-Computer Interaction</option>
+                <option value="cs.IR">Information Retrieval</option>
+                <option value="cs.IT">Information Theory</option>
+                <option value="cs.LG">Machine Learning</option>
+                <option value="cs.LO">Logic in Computer Science</option>
+                <option value="cs.MA">Multiagent Systems</option>
+                <option value="cs.MM">Multimedia</option>
+                <option value="cs.MS">Mathematical Software</option>
+                <option value="cs.NA">Numerical Analysis</option>
+                <option value="cs.NE">Neural and Evolutionary Computing</option>
+                <option value="cs.NI">Networking and Internet Architecture</option>
+                <option value="cs.OH">Other Computer Science</option>
+                <option value="cs.OS">Operating Systems</option>
+                <option value="cs.PF">Performance</option>
+                <option value="cs.PL">Programming Languages</option>
+                <option value="cs.RO">Robotics</option>
+                <option value="cs.SC">Symbolic Computation</option>
+                <option value="cs.SD">Sound</option>
+                <option value="cs.SE">Software Engineering</option>
+                <option value="cs.SI">Social and Information Networks</option>
+                <option value="cs.SY">Systems and Control</option>
+            </select><br>
+                <strong>Year:</strong> <input type="number" min="1980" max="2023" step="1" value="2023" /><br><br>
+              </form>
+    
+              <button onclick="myFunction()">Go to arXiv!</button>
+        </div>
+    </body>
+</html>
+
