@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/</loc>
+    <lastmod>2023-04-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/blog/</loc>
     <lastmod>2022-12-14T00:00:00+00:00</lastmod>
   </url><url>
@@ -10,9 +13,6 @@
   </url><url>
     <loc>/blog/how-to-solve/</loc>
     <lastmod>2022-08-18T20:08:00+02:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2022-08-17T21:45:56+02:00</lastmod>
   </url><url>
     <loc>/blog/cold_start/</loc>
     <lastmod>2021-10-17T21:40:10+02:00</lastmod>
