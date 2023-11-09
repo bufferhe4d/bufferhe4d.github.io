@@ -80,8 +80,17 @@ function toggleHTML() {
 
 //=== apply dark mode style
 function darkmode() {
-  document.body.className = (document.body.className==='dark'? md.yaml.theme || '' : 'dark' )
+  var currentClass = document.body.className;
+  var isDark = currentClass === 'dark';
+  
+  // Toggle the class name
+  document.body.className = isDark ? '' : 'dark';
+
+  // Save the preference to localStorage
+  localStorage.setItem('darkMode', !isDark);
 }
+
+
 
 //=== load post from markdown file. 
 md.load = function (mdfile) { 
@@ -223,19 +232,21 @@ md.months = {}
 md.home = (md.params.home? 'home=' + md.params.home + '&' : '')
 md.home += (md.params.theme? 'theme=' + md.params.theme + '&' : '' )
 
-//=== init blog apge.
+//=== init blog page.
 window.onload = function () { 
   var xmlhttp = new XMLHttpRequest();
   
   xmlhttp.onload = function (e) {
-  
+    
     // load post list, and render markdown content, and create nav panel
     md.text = this.responseText.replace( /^\*\s*(.+?)\:\s*\[(.*?)\]\((.*?)\)\s+\{(.+)\}\s*$/gm, md.getPosts )
     document.getElementById('right-panel').innerHTML = md.html(md.text) + '<br>'
     md.nav( md.yaml['nav-group'] )
     
     // apply style/title/subtitle
-    document.body.className = md.params.theme || md.yaml.theme || ''
+    //document.body.className = md.params.theme || md.yaml.theme || ''
+    var darkMode = localStorage.getItem('darkMode') === 'true';
+    document.body.className = darkMode ? 'dark' : md.params.theme || md.yaml.theme || '';
     document.title = document.getElementById('title').innerText = md.yaml.title || 'Kriptografi Üzerine'
     document.getElementById('subtitle').innerText = md.yaml.subtitle || '' 
     
@@ -262,7 +273,6 @@ window.onload = function () {
     text = document.getElementById('md-post').innerHTML
     end = text.search("Yazılar")
     document.getElementById('md-post').innerHTML = document.getElementById('md-post').innerHTML.substring(0, end)
-    console.log("Here")
     }
   
   xmlhttp.open("GET", md.params.home||'index.md' , true)
