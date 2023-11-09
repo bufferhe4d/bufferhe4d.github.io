@@ -53,9 +53,9 @@ Bu site <a href="https://github.com/casualwriter/casual-markdown">casual-markdow
 
 ## Yazılar
 
-* 2023/10/08: [Temel Kriptografi](temel_kriptografi.md) {#featured}
+* 2023/10/08: [Temel Kriptografi](temel_kriptografi.md) {#starter}
 * 2023/10/08: [Simetrik Kriptografi](simetrik.md) {#featured}
-* 2023/10/08: [Multipary Computation](mpc.md) {#featured}
+* 2023/10/08: [Multiparty Computation](mpc.md) {#featured}
 * 2023/10/08: [Zero-Knowledge Proofs](zk.md) {#featured}
 * 2023/10/08: [Post-Quantum Cryptography](post_quantum.md) {#featured}
 * 2023/10/08: [Side Channel Attacks](side_channel.md) {#featured}

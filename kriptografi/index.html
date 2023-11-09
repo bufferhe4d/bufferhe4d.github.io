@@ -149,7 +149,12 @@ md.nav = function (options) {
   
     // generate featured posts list
     if (navOpt[i].trim() === 'featured') {
-      navDiv += '<p class="nav-title">Kriptografi Konuları</p>'  
+      navDiv += '<p class="nav-title">Başlangıç</p>'  
+      for (var x=0; md.tags.starter&&x<md.tags.starter.length; x++) {
+        navDiv += '<li class="nav-post"><a href="?' + md.home + 'post=' 
+        navDiv += md.tags.starter[x].file + '">' + md.tags.starter[x].title + '</a></li>'
+      }
+      navDiv += '<p class="nav-title">Kriptografinin Alt Dalları</p>'  
       for (var x=0; md.tags.featured&&x<md.tags.featured.length; x++) {
         navDiv += '<li class="nav-post"><a href="?' + md.home + 'post=' 
         navDiv += md.tags.featured[x].file + '">' + md.tags.featured[x].title + '</a></li>'
