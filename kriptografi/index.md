@@ -25,6 +25,8 @@ a {
 
 ## Kriptografi Öğrenmek Üzerine
 
+<span class="post-date">2023-10-07</span>
+
 Bu sayfada 2015 yılından beri kriptografi alanında çalışmaya başlama ve sonrasında çalıştığım alanı daraltma sürecinde kullandığım materyalleri organize bir şekilde toplamayı amaçlıyorum. Türkiye'deki üniversite müfredatlarına daha hakim olduğum için yazılardaki perspektif ve önerilerin Türk öğrencilere daha faydalı olmasını umuyorum. Kriptografi'nin farklı alanları için oluşturduğum her sayfada; alanın genel olarak ne tarz problemler üzerine çalıştığını hakkında ufak bir özet, sonrasında nasıl başlarım ve nasıl ilerlerim başlıkları altında materyal önerileri var. Önerilen kaynaklar hususunda takip ettiğim bir kaç prensip var:
 
 1. Önerilen kaynakların tamamı benim bireysel olarak tercih ettiğim veya birlikte çalıştığım öğrenciler tarafından kullanım sürecine şahitlik ettiğim kaynaklardan oluşuyor. Kaynak üzerinde yeterli vakit harcamadıysam önerilerde yer almıyor.
@@ -42,6 +44,10 @@ Blockchain ve Zero-Knowledge alanında son yıllarda gerçekleşen ilerlemeler v
 Herkese iyi çalışmalar diliyorum.
 
 Abdullah Talayhan
+
+
+Bu site <a href="https://github.com/casualwriter/casual-markdown">casual-markdown</a> kullanılarak oluşturuldu.
+
 ## Yazılar
 
 * 2023/10/08: [Temel Kriptografi](temel_kriptografi.md) {#featured}

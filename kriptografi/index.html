@@ -51,7 +51,9 @@ nav li { margin-left:12px }
 <div id=content>
   <div id="left-panel" style=""></div>
   <div id="right-panel" style="display:none"></div>
+  
 </div>
+
 
 <button style="display:none" onclick="toggleHTML()" accesskey=s>ShowHTML</button> 
 <button style="display:none" onclick="darkmode()" accesskey=k>Dark</button> 
@@ -90,7 +92,7 @@ md.load = function (mdfile) {
       txt =  this.responseText.replace(/\[(.*?)\]\((.*?\.md)\)/gm, '<a href=# onclick="md.load(this.title)" title="$2">$1</a>')
       document.getElementById('md-post').innerHTML = md.html(txt) + '<br>'
       document.getElementById('right-panel').scrollTop = 0
-      //md.showTags(mdfile)
+      md.showTags(mdfile)
     }
   }
   xmlhttp.open("GET", mdfile, true)
@@ -104,11 +106,11 @@ md.showTags = function (file) {
 
   if (post && title) {
     var node = document.createElement("p");
-    var html = '<span class="post-date">Date: ' + post.date.toISOString().substr(0,10)
-    html += '</span>&nbsp; <span class="post-tags">Tags: ' 
-    for (var i=0; i<post.tags.length; i++) {
-      html += '<a href="?tag=' + post.tags[i] + '">#' + post.tags[i] + '</a> '
-    }
+    var html = '<span class="post-date">' + post.date.toISOString().substr(0,10)
+    // html += '</span>&nbsp; <span class="post-tags">Tags: ' 
+    // for (var i=0; i<post.tags.length; i++) {
+    //   html += '<a href="?tag=' + post.tags[i] + '">#' + post.tags[i] + '</a> '
+    // }
     node.innerHTML = html + '</span>'
     title.parentNode.insertBefore(node, title.nextSibling);
   }
