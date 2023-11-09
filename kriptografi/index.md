@@ -19,6 +19,7 @@ span.post-tags{
 a {
     font-weight: bold;
 }
+
 </style>
 
 <div id="md-post">
@@ -27,11 +28,13 @@ a {
 
 <span class="post-date">2023-10-07</span>
 
-Bu sayfada 2015 yılından beri kriptografi alanında çalışmaya başlama ve sonrasında çalıştığım alanı daraltma sürecinde kullandığım materyalleri organize bir şekilde toplamayı amaçlıyorum. Türkiye'deki üniversite müfredatlarına daha hakim olduğum için yazılardaki perspektif ve önerilerin Türk öğrencilere daha faydalı olmasını umuyorum. Kriptografi'nin farklı alanları için oluşturduğum her sayfada; alanın genel olarak ne tarz problemler üzerine çalıştığını hakkında ufak bir özet, sonrasında nasıl başlarım ve nasıl ilerlerim başlıkları altında materyal önerileri var. Önerilen kaynaklar hususunda takip ettiğim bir kaç prensip var:
+Bu sayfada 2015 yılından beri kriptografi alanında çalışmaya başlama ve sonrasında çalıştığım alanı daraltma sürecinde kullandığım materyalleri organize bir şekilde toplamayı amaçlıyorum. Türkiye'deki üniversite müfredatlarına daha hakim olduğum için yazılardaki perspektif ve önerilerin Türk öğrencilere daha faydalı olmasını umuyorum. Kriptografi'nin farklı alanları için oluşturduğum her sayfada; alanın genel olarak ne tarz problemler üzerine çalıştığını hakkında ufak bir özet, sonrasında nasıl başlarım ve nasıl ilerlerim başlıkları altında materyal önerileri var. Soldaki menüden veya mobil bir cihazdan okuyorsanız üstteki "Konular" sekmesinden yazılara ulaşabilirsiniz.
+
+Önerilen kaynaklar hususunda takip ettiğim bir kaç prensip var:
 
 1. Önerilen kaynakların tamamı benim bireysel olarak tercih ettiğim veya birlikte çalıştığım öğrenciler tarafından kullanım sürecine şahitlik ettiğim kaynaklardan oluşuyor. Kaynak üzerinde yeterli vakit harcamadıysam önerilerde yer almıyor.
 2. Bazı konular için önerilebilecek birden fazla kaynak var, kendi öğrenim sürecimde aynı konu için farklı kaynaklar arasında çok fazla vakit kaybettim. Sonrasında bir konuyu öğrenmek için "yeterince iyi" bir kaynak belirleyip geri kalan her şeyi ikincil olarak görme gibi bir düstur edindim. Bu sebeple hem nasıl başlarım hem de nasıl ilerlerim alt başlıklarında bulunan kaynaklar, birbirlerinin alternatifi olarak değil, öğrenmek istediğiniz şeye göre ard arda tüketilebilecek şekilde düzenlendi.  
-3. 2. Presnipin geçerli olmadığı tek durum ücretsiz olarak erişilemeyen bir kaynağa ücretsiz bir alternatif sunulduğunda geçerli.
+3. 2. Prensip geçerli olmadığı tek durum ücretsiz olarak erişilemeyen bir kaynağa ücretsiz bir alternatif sunulduğunda geçerli.
 
 **Not: Bir konuyu öğrenmenin birden fazla ve kişiden kişiye göre efektifliği değişen yolları var. Bu yazıların amacı insanları farklı farklı bir sürü kaynağa boğmak yerine tecrübelere dayanarak daha spesifik bir yol çizmek. Bu sebeple yeterince iyi olup bu yazılarda belirtilmeyen kaynaklar ve yaklaşımlar olacaktır.**
 
