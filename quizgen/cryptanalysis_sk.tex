@@ -1,0 +1,534 @@
+\question[1]{Let $C$ be a permutation over $\left\{ 0,1 \right\}^p$. Tick the $ \textbf{incorrect} $ assertion:}
+{$\text{DP}^C(a,0) = 1$ for some $a \neq 0$.}
+{$\text{DP}^C(0,b) = 0$ for some $b \neq 0$.}
+{$\sum_{b \in \left\{ 0,1 \right\}^p}\text{DP}^C(a,b) = 1$ for any $a\in \left\{ 0,1 \right\}^p$.}
+{$2^p \text{DP}^C(a,b) \bmod 2 = 0$, for any $a,b\in \left\{ 0,1 \right\}^p$."}
+
+\question[2]{Consider the linear mask $\alpha := \mathsf{0xf0}$ and the input $X := \mathsf{0xe2}$. We have $\alpha \cdot X = $ \dots}
+{$\mathsf{0}$}
+{$\mathsf{1}$}
+{$\mathsf{0xe0}$}
+{$\mathsf{0xf2}$"}
+
+\question[4]{The advantage of an algorithm $\mathcal{A}$ having to distinguish a distribution $P$ which is either $P_0$ or $P_1$ is given by}
+{$\Pr[\mathcal{A} \rightarrow 0 | P = P_0] - \Pr[\mathcal{A} \rightarrow 1 | P = P_1]$.}
+{$\Pr[\mathcal{A} \rightarrow 0 | P = P_0]$.}
+{$8 \times \mathsf{Dec}^n(|P_1-P_0|)$.}
+{$\Pr[\mathcal{A} \rightarrow 1 | P = P_1] - \Pr[\mathcal{A} \rightarrow 1 | P = P_0]$."}
+
+\question[4]{Tick the $ \textbf{correct} $ assertion. Assume that $C$ is an arbitrary random permutation.}
+{$\mathsf{BestAdv}_n(C,C^\ast)=\mathsf{Dec}^n_{\left|\left|\left|\cdot\right|\right|\right|_\infty}(C)$}
+{$\mathsf{BestAdv}_n(C,C^\ast)=\mathsf{Dec}^{n/2}_{\left|\left|\left|\cdot\right|\right|\right|_\infty}(C)$}
+{$E(\mathsf{DP}^{C}(a,b)) < \frac{1}{2}$}
+{$\mathsf{BestAdv}_n(C,C^\ast)=\frac{1}{2}\mathsf{Dec}^n_{\left|\left|\cdot\right|\right|_a}(C)$"}
+
+\question[3]{Tick the $ \textbf{incorrect} $ assertion. A distinguisher \dots}
+{can be used to break a PRNG.}
+{is an algorithm calling an oracle.}
+{can prove the security of a block cipher.}
+{can show a weakness in a design."}
+
+\question[4]{Tick the $ \textbf{incorrect} $ assertion. A cipher with an order three decorrelation which is low \dots}
+{resists to differential attacks.}
+{resists to linear attacks.}
+{has no good distinguisher that uses three queries.}
+{resists to any polynomially-bounded adversary."}
+
+\question[3]{The statistical distance between two distributions is \dots}
+{unrelated to the advantage of a distinguisher.}
+{a lower bound on the advantage of $ \textbf{all} $ distinguishers (with a unique sample).}
+{an upper bound on the advantage of $ \textbf{all} $ distinguishers (with a unique sample).}
+{an upper bound on the advantage of all distinguishers making statistics on the obtained samples."}
+
+\question[2]{Tick the $ \textbf{incorrect} $ assertion.}
+{$\mathsf{LP}^f$ and $\mathsf{DP}^f$ are linked together.}
+{For independent random boolean variables $B_1, \dots, B_n$, we have $\mathsf{LP}(B_1\oplus \dots \oplus B_n) = \mathsf{LP}(B_1) \oplus \dots \oplus \mathsf{LP}(B_n)$.}
+{$\mathsf{LP}^f(a,b) = \left( 2 \Pr_X\left[ a\cdot X = b\cdot f(X) \right] -1 \right)^2$.}
+{$\mathsf{DP}^f(a,b) = \Pr_X\left[ f(X\oplus a) = f(X) \oplus b \right]$."}
+
+\question[1]{Which of the following circuits does not change an input difference.}
+{A XOR to a constant gate.}
+{An SBox.}
+{A shift of all bits by one position to the right.}
+{A non-linear circuit."}
+
+\question[4]{Tick the $ \textbf{incorrect} $ assertion. The perfect cipher over $\left\{ 0,1 \right\}^\ell$ is \dots}
+{uniformly distributed.}
+{$C^*\;$.}
+{using a key space of size $2^\ell!$.}
+{practical."}
+
+\question[1]{Assume a perfect cipher over a message-block space of $\{0, 1\}^{\ell}$. Then,}
+{encrypting under a fixed key is synonymous to fixing a permutation in the symmetric group $S_{2^{\ell}}$.}
+{the key to be used is a uniformly distributed integer between $1$ and $2^\ell$.}
+{the key has to follow a uniform distribution if and only if the plaintext is uniformly distributed in its domain.}
+{the cipher works as an one-time pad."}
+
+\question[2]{Tick the $ \textbf{true} $ assertion.}
+{an almost $n$-wise independent cipher is necessarily a perfect cipher.}
+{$n$-wise independence should help resist chosen-plaintext attacks.}
+{$n$-wise independence holds for one-time pad.}
+{$n$-wise independence is not relevant to cryptanalytic attacks on block ciphers."}
+
+\question[4]{Tick the $ \textbf{true} $ assertion.}
+{linear cryptanalysis imposes a model of chosen-ciphertext attacks.}
+{differential cryptanalysis imposes a model of known-plaintext attacks.}
+{finding the deviant properties in cryptanalytic attacks is extremely straightforward.}
+{some ciphers resist better to differential cryptanalysis than to linear cryptanalysis."}
+
+\question[1]{Tick the $ \textbf{true} $ assertion. Consider a function $f:\{0 \, 1\}^p \rightarrow \{0 \, 1\}^q$.}
+{$\displaystyle\sum_{b\in\{0,1\}^q} \mathsf{DP}^f(a,b)=1$, for all $a \in \{0,1\}^p$.}
+{$\mathsf{DP}^f$ cannot be computed from $\mathsf{LP}^f$.}
+{$\mathsf{LP}^f$ cannot be computed from $\mathsf{DP}^f$.}
+{For $B_i$ independent boolean variables, $\mathsf{LP}(B_1 \oplus \ldots \oplus B_n)$=$\mathsf{LP}(B_1) + \ldots + \mathsf{LP}(B_n)$."}
+
+\question[4]{Tick the $ \textbf{true} $ assertion. The advantage of a distinguisher of two distributions $P_0$ and $P_1$}
+{is always the Euclidean distance between $P_0$ and $P_1$.}
+{is $\mathsf{Adv}_{\mathcal{A}} (P_0 , P_1 ) = \Pr[P = P_1|A \rightarrow 1]-\Pr[P = P_0| A \rightarrow 1]$.}
+{is $\mathsf{Adv}_{\mathcal{A}} (P_0 , P_1 ) = \Pr[A \rightarrow 0|P = P_1 ]-\Pr[A \rightarrow 1|P = P_0]$.}
+{can touch the statistical distance $\frac{1}{2}\Sigma_{x}|P_0(x) - P_1(x)|$ between $P_0$ and $P_1$, when he makes only one query."}
+
+\question[1]{Who invented linear cryptanalysis?}
+{Mitsuru Matsui}
+{Eli Biham}
+{Serge Vaudenay}
+{Adi Shamir"}
+
+\question[3]{Tick the $ \textbf{true} $ assertion.}
+{$\mathsf{Dec}^n(C_1\circ C_2)$=$\mathsf{Dec}^n(C_1) \times \mathsf{Dec}^n(C_2)$, where $C_1$ and $C_2$ are two independent random permutations over a set $A$.}
+{The SEI (Squared Euclidean Imbalance) of the distribution $P$ of support $G$ is a special distance equal to $0.015$ when $P$ and the uniform distribution are anti-correlated.}
+{$\Theta(\mathsf{SEI}(P)^{-1})$ queries are needed to distinguish a distribution $P$ from the uniform distribution $U$ with significant advantage.}
+{Decorrelation can be used only in theory for designing Feistel schemes and not for other block ciphers."}
+
+\question[2]{Tick the $ \textbf{true} $ assertion.}
+{Luby-Rackoff's lemma bounds the advantage of distinguisher trying to discern a 3-round Feistel scheme from another Feistel scheme.}
+{Decorrelation can express the best $d$-limited non-adaptive distinguisher between two random functions $F$ and $G$.}
+{Decorrelation uses the $a$-norm to express the advantage gained by the best, limited non-adaptive distinguisher.}
+{Decorrelation is in fact concerned only with expressing the advantage of adaptive distinguishers."}
+
+\question[4]{Tick the $ \textbf{true} $ assertion. Assume that $C$ is an arbitrary random permutation.}
+{$\mathsf{BestAdv}_n(C,C^\ast)=\mathsf{Dec}^n_{\left|\left|\left|\cdot\right|\right|\right|_a}(C)$}
+{$\mathsf{BestAdv}_n^{n.a.}(C,C^\ast)=\frac{1}{2}\mathsf{Dec}^n_{\left|\left|\left|\cdot\right|\right|\right|_a}(C)$}
+{$E(\mathsf{LP}^{C}(a,b)) < \frac{1}{2}$}
+{$\mathsf{BestAdv}_n^{n.a.}(C,C^\ast)=\frac{1}{2}\mathsf{Dec}^n_{\left|\left|\left|\cdot\right|\right|\right|_\infty}(C)$"}
+
+\question[1]{Assume a perfect cipher over a message-block space of a message block space $\{0, 1\}^{\ell}$. Then,}
+{the key to be used is a uniformly distributed integer between $1$ and $2^\ell !$.}
+{the key to be used is a uniformly distributed integer between $1$ and $2^\ell$.}
+{the key to be used is a uniformly distributed integer between $1$ and $2^{\ell-1} !$.}
+{the key to be used is a uniformly distributed integer between $1$ and $\ell!$."}
+
+\question[4]{Tick the $ \textbf{true} $ assertion. Assume an arbitrary $f:\{0,1\}^p \rightarrow \{0,1\}^q$, where $p$ and $q$ are integers.}
+{$\mathsf{DP}^f(a,b)=\displaystyle\Pr_{X\in_U\{0,1\}^p}[f(X\oplus a)\oplus f(X)\oplus b=1]$, for all $a \in \{0,1\}^p$, $b \in \{0,1\}^q$.}
+{$\Pr[f(x\oplus a)\oplus f(x)\oplus b=0]=E(\mathsf{DP}^f(a,b))$, for all $a, x \in \{0,1\}^p$, $b \in \{0,1\}^q$.}
+{$2^p\mathsf{DP}^f(a,b)$ is odd, for all $a \in \{0,1\}^p, b \in \{0,1\}^q$.}
+{$\displaystyle\sum_{b\in\{0,1\}^q} \mathsf{DP}^f(a,b)=1$, for all $a \in \{0,1\}^p$."}
+
+\question[3]{Tick the $ \textbf{false} $ assertion.}
+{$\mathsf{LP}^f(a, b) = (2\displaystyle\Pr_{X}[a\cdot X = b\cdot f(X)]- 1)^2$.}
+{$\mathsf{LP}^f(0,0)=\mathsf{DP}^f(0,0)$.}
+{$\mathsf{LP}^f$ cannot be computed from $\mathsf{DP}^f$.}
+{For $B_i$ independent boolean variables, $\mathsf{LP}(B_1 \oplus \ldots \oplus B_n)$=$\mathsf{LP}(B_1) \times \ldots \times \mathsf{LP}(B_n)$."}
+
+\question[3]{Tick the $ \textbf{false} $ assertion. A distinguisher can \ldots}
+{\ldots be a first step towards key recovery in block ciphers.}
+{\ldots be assumed deterministic when it is computationally unbounded.}
+{\ldots factorize big numbers.}
+{\ldots differentiate the encryption of two known plaintexts."}
+
+\question[1]{The advantage of a distingusher of two distributions $P_0$ and $P_1$, which takes independent variables from $P$ is:}
+{$Adv_{\mathcal{A}} (P_0 , P_1 ) = Pr[A \rightarrow 1|P = P_1 ]-Pr[A \rightarrow 1|P = P_0]$.}
+{$Adv_{\mathcal{A}} (P_0 , P_1 ) = Pr[P = P_1|A \rightarrow 1]-Pr[P = P_0| A \rightarrow 1]$.}
+{$Adv_{\mathcal{A}} (P_0 , P_1 ) = Pr[A \rightarrow 1|P = P_1 ]-Pr[A \rightarrow 0|P = P_0]$.}
+{$Adv_{\mathcal{A}} (P_0 , P_1 ) = Pr[A \rightarrow 0|P = P_1 ]-Pr[A \rightarrow 1|P = P_0]$."}
+
+\question[1]{Tick the $ \textbf{false} $ assertion. The advantage of a distinguisher... \ldots}
+{\ldots never depends on the number of samples tested.}
+{\ldots can be expressed using the statistical distance between two functions.}
+{\ldots can be expressed using type I and type II errors.}
+{\ldots can be expressed in function of pre-assigned costs per error type."}
+
+\question[1]{Tick the $ \textbf{false} $ assertion.}
+{$\mathsf{Dec}^n(C_1\circ C_2)$=$\mathsf{Dec}^n(C_1) \times \mathsf{Dec}^n(C_2)$, where $C_1$ and $C_2$ are two independent random permutations over a set $A$.}
+{The SEI (Squared Euclidean Imbalance) of the distribution $P$ of support $G$ is greater than or equal to $0$.}
+{$\Theta(\mathsf{SEI}(P)^{-1})$ queries are needed to distinguish a distribution $P$ from the uniform distribution $U$ with significant advantage.}
+{Decorrelation can be used in the design of practical constructions, e.g., Feistel ciphers, yielding certain security guarantees."}
+
+\question[3]{Tick the $ \textbf{false} $ assertion. Decorrelation \ldots}
+{\ldots formalises security of ciphers when an attack is limited to a fixed number $d$ of samples.}
+{\ldots can express the best $d$-limited non-adaptive distinguisher between two random functions $F$ and $G$.}
+{\ldots uses the infinity norm to express the advantage gained by the best, limited adaptive distinguisher.}
+{\ldots uses the infinity norm to express the advantage gained by the best, limited non-adaptive distinguisher."}
+
+\question[2]{Tick the $ \textbf{false} $ assertion. Assume that $C$ is a random permutation.}
+{$\mathsf{BestAdv}_n(C,C^\ast)=\frac{1}{2}\mathsf{Dec}^n_{\left|\left|\left|\cdot\right|\right|\right|_a}(C)$}
+{$\mathsf{BestAdv}_n^{n.a.}(C,C^\ast)=\frac{1}{2}\mathsf{Dec}^n_{\left|\left|\left|\cdot\right|\right|\right|_a}(C)$}
+{$E(\mathsf{LP}^{C}(a,b))\leq 1$}
+{$\mathsf{BestAdv}_n^{n.a.}(C,C^\ast)=\frac{1}{2}\mathsf{Dec}^n_{\left|\left|\left|\cdot\right|\right|\right|_\infty}(C)$"}
+
+\question[2]{Tick the $ \textbf{false} $ assertion.}
+{If a cipher has the decorrelation of order 1 equal to $0$, then one-time encryption provides perfect secrecy.}
+{Let $C$ be a cipher. If $\mathsf{Dec}^n_{\left|\left|\left|\cdot\right|\right|\right|_a}(C)$=0, then $\mathsf{Dec}^n_{\left|\left|\left|\cdot\right|\right|\right|_\infty}(C) \neq$0 .}
+{Good decorrelations can protect against differential cryptanalysis.}
+{Good decorrelations can protect against linear cryptanalysis."}
+
+\question[1]{Tick the $ \textbf{true} $ assertion. Assume that $p$ and $q$ are integers and that $a\in\{0,1\}^p$.}
+{$\forall b\in\{0,1\}^q, DP^f(a,b)=\displaystyle\Pr_{X\in_U\{0,1\}^p}[f(X\oplus a)\oplus f(X)\oplus b=0]$}
+{$\forall x,b\in\{0,1\}^p, \Pr[f(x\oplus a)\oplus f(x)\oplus b=0]=E(DP^f(a,b))$}
+{$DP^f(a,0)=1\Longleftrightarrow a=0$}
+{$\displaystyle\sum_{b\in\{0,1\}^q} 2^p\cdot DP^f(a,b)=1$"}
+
+\question[2]{Tick the $ \textbf{false} $ assertion.}
+{$LP^f$ can be computed from $DP^f$ and reciprocally.}
+{$LP^f(a,b)$ is always even.}
+{$LP^f(0,0)=DP^f(0,0)$.}
+{The hypothesis of stochastic equivalence states that what happens for a key, happens on average for a random key."}
+
+\question[3]{Tick the $ \textbf{false} $ assertion. A distinguisher \ldots}
+{\ldots can break PRNG.}
+{\ldots is an algorithm calling an oracle.}
+{\ldots recovers the secret key of a stream cipher.}
+{\ldots can differentiate the encryption of two known plaintexts."}
+
+\question[2]{Tick the $ \textbf{false} $ assertion. The SEI of the distribution $P$ of support $G$ \ldots}
+{is equal to \# $G\cdot\displaystyle\sum_{x\in G}\left(P(x)-\frac{1}{\sharp G}\right)^2$}
+{is the advantage of the best distinguisher between $P$ and the uniform distribution.}
+{denotes the Squared Euclidean Imbalance.}
+{is positive."}
+
+\question[1]{Tick the $ \textbf{false} $ assertion.}
+{A hat and a ring have similar topologies properties.}
+{The moon and a banana have similar topologies properties.}
+{A compact set is always bounded.}
+{The empty set is both closed and open."}
+
+\question[3]{Tick the $ \textbf{false} $ assertion. A character $\chi$ is \ldots}
+{\ldots used for spectral analysis.}
+{\ldots an element of the dual group.}
+{\ldots always a group isomorphism.}
+{\ldots always a group homomorphism."}
+
+\question[1]{Tick the $ \textbf{false} $ assertion. The Advantage can be computed \ldots}
+{\ldots with a differential characteristic.}
+{\ldots as a distance.}
+{\ldots with a frequentist approach.}
+{\ldots with a Bayesian approach."}
+
+\question[3]{How many necessary and sufficient queries do we need to distinguish the distribution $P$ from the uniform distribution $U$ with significant advantage?}
+{$d(P,U)^{-1}$}
+{$\infty$}
+{$\Theta(SEI(P)^{-1})$}
+{$\Theta(C(P,U))$"}
+
+\question[4]{Tick the $ \textbf{false} $ assertion. Assume that $C$ is a random permutation.}
+{BestAdv$_n(C,C^\ast)=\frac{1}{2}Dec^n_{\left|\left|\left|\cdot\right|\right|\right|_a}(C)$}
+{BestAdv$_n^{n.a.}(C,C^\ast)=\frac{1}{2}Dec^n_{\left|\left|\left|\cdot\right|\right|\right|_\infty}(C)$}
+{$E(LP^{C}(a,b))\leq 1$}
+{$Dec^n(C\circ C)\leq Dec^n(C)^2$."}
+
+\question[2]{Tick the $ \textbf{false} $ assertion. A cipher with a good decorrelation of order 2 protects against \ldots}
+{\ldots non-adaptive distinguishers limited to two queries.}
+{\ldots unbounded attacks.}
+{\ldots differential cryptanalysis.}
+{\ldots linear cryptanalysis."}
+
+\question[2]{Which adversarial model corresponds to Differential Cryptanalysis?}
+{Chosen Ciphertext Attack}
+{Chosen Plaintext Attack}
+{Known Ciphertext Attack}
+{Known Plaintext Attack"}
+
+\question[3]{Tick the $ \textbf{false} $ assertion.}
+{Differential Cryptanalysis relies on a deviant property of the cipher core part.}
+{DP$^f(0,b)=1\Leftrightarrow b=0$}
+{DP$^f(a,b)=$DP$^f(b,a)$}
+{$\displaystyle\sum_{b\in \{0,1\}^q}$DP$^f(a,b)=1$"}
+
+\question[1]{Tick the $ \textbf{false} $ assertion. In Differential Cryptanalysis, the corresponding differential circuit of \ldots}
+{\ldots a linear circuit ($Y=M\times X$) is $\Delta X=a\Rightarrow \Delta Y=^tM\times a$}
+{\ldots a duplicate gate ($X=Y=Z$) is $\Delta X=a\Rightarrow \Delta Y = \Delta Z = a$}
+{\ldots a XOR gate ($X\oplus Y = Z$) is $(\Delta X=a,\ \Delta Y=b)\Rightarrow \Delta Z = a\oplus b$}
+{\ldots a XOR to constant gate ($Y=X\oplus K$) is $\Delta X = a \Rightarrow \Delta Y = a$"}
+
+\question[4]{Which adversarial model corresponds to Linear Cryptanalysis?}
+{Chosen Ciphertext Attack}
+{Chosen Plaintext Attack}
+{Known Ciphertext Attack}
+{Known Plaintext Attack"}
+
+\question[3]{Tick the $ \textbf{false} $ assertion. In Linear Cryptanalysis, the corresponding mask circuit of \ldots}
+{\ldots a XOR gate ($X\oplus Y = Z$) is $a\cdot Z=(a\cdot X)\oplus (a\cdot Y)$}
+{\ldots a XOR to constant gate ($Y=X\oplus K$) is $a\cdot Y = (a\cdot X)\oplus (a\cdot K)$}
+{\ldots a linear circuit ($Y=M\times X$) is $a\cdot Y = (M\times a)\cdot X$}
+{\ldots a duplicate gate ($X=Y=Z$) is $(a\oplus b)\cdot X=(a\cdot Y)\oplus (b\cdot Z)$"}
+
+\question[1]{Tick the $ \textbf{false} $ assertion.}
+{LP$^f()$ is not the fourier transform of DP$^f()$ and vice versa.}
+{$2^q=\displaystyle\sum_{\alpha ,\beta}$LP$^f(\alpha ,\beta)$}
+{LP$^f(a,b)=(2\cdot\displaystyle\Pr_{X}[a\cdot X=b\cdot f(X)]-1)^2$}
+{DP$^f(a,b)=\displaystyle\Pr_{X}[f(X\oplus a)=f(X)\oplus b]$"}
+
+\question[4]{Tick the $ \textbf{true} $ assertion.}
+{$\forall c, E($DP$^{g\circ f}(a,b))=E($DP$^f(a,c))\times E($DP$^g(c,b))$.}
+{If LP$(B)=(2\Pr[B=0]-1)^2$ for any $B$ boolean, then for any $B_1,...,B_n$ iid random variables we have LP$(B_1\oplus ...\oplus B_n)=$LP$(B_1)+...+$LP$(B_n)$.}
+{DES was designed to optimally resist linear cryptanalysis.}
+{If $\Delta X \rightarrow \Delta Z \rightarrow \Delta Y$ is a Markov chain, then there is a cumulative effect of characteristics."}
+
+\question[3]{The best distinguisher\ldots}
+{\ldots requires too many samples.}
+{\ldots can never be implemented.}
+{\ldots is based on the likelihood ratio.}
+{\ldots is based on exhaustive search."}
+
+\question[1]{Tick the $ \textbf{false} $ assertion.}
+{$d(f_0,f_1)=\displaystyle\sum_{x}\sqrt{f_0(x)f_1(x)}$}
+{Adv$_\mathcal{A} \leq d(f_0,f_1)$}
+{$d(P_0^{\otimes q},P_1^{\otimes q}) \leq q \cdot d(P_0,P_1)$}
+{$D(P_0\| P_1)=\displaystyle\sum_{x\in \mbox{Supp}(P_0)}P_0(x)\log{\frac{P_0(x)}{P_1(x)}}$"}
+
+\question[4]{Tick the $ \textbf{true} $ assertion.}
+{An open set is a set which has not been found yet.}
+{A compact set is a very small set}
+{BestAdv$_q(P_0,P_1)=2^{-qC(P_0,P_1)}$}
+{At least ${1}/{C(P_0,P_1)}$ samples are needed to obtain a good advantage."}
+
+\question[4]{Let $C_1$, $C_2$ and $C^*$ be three independent random permutations over a set $A$, $C^*$ being uniformaly distributed. Tick the $ \textbf{false} $ assertion.}
+{$[C_2\circ C_1]^n=[C_1]^n\circ [C_2]^n$}
+{$[C^*]^n\times [C_2]^n=[C^*]^n$}
+{$[C_1]^n\times [C^*]^n=[C^*]^n$}
+{$[C^*]^n$ is neutral for $x$"}
+
+\question[3]{What is the Squared Euclidean Imbalance?}
+{$\displaystyle P_0(x)\sum_x(P_1(x)-P_0(x))^2$}
+{$\displaystyle\frac{1}{P_0(x)}\sum_x(P_1(x)-P_0(x))^2$}
+{$\displaystyle\sum_x\frac{(P_1(x)-P_0(x))^2}{P_0(x)}$}
+{$\displaystyle\sum_x\left(\frac{P_1(x)}{P_0(x)}-1\right)^2$"}
+
+\question[2]{Tick the $ \textbf{false} $ assertion.}
+{Dec$^n(F)=0\Rightarrow [F]^n=[F^*]^n$}
+{Dec$^n(F,G)=\left|\left|\left| [F]^n\right|\right|\right|_\infty$}
+{$\displaystyle\left|\left|\left| M\right|\right|\right|_\infty=\max_{row}\sum_{column}\left| M_{row,column}\right|$}
+{$\displaystyle\| V\|_\infty=\max_{row}{\mid V_{row}\mid}$"}
+
+\question[3]{Tick the $ \textbf{false} $ assertion. Decorrelation\ldots}
+{\ldots can measure how close a block cipher is to a uniform random permutation.}
+{\ldots can serve as a tool to prove security.}
+{\ldots can be used to construct perfect ciphers.}
+{\ldots is defined from distance notions between matrices."}
+
+\question[2]{Tick the $ \textbf{false} $ assertion. $C(P_0,P_1)\ldots$}
+{$\ldots\displaystyle\sim-\log{\sum_{x}\sqrt{P_0(x)P_1(x)}}$}
+{$\ldots=\displaystyle\sum_{x}\left|P_1(x)-P_0(x)\right|$}
+{$\ldots\displaystyle\sim\frac{\mbox{SEI}(P_0,P_1)}{8\mbox{ln}2}$}
+{is the Chernoff information between $P_0$ ans $P_1$."}
+
+\question[4]{The differential probability of a function $f:\{0,1\}^p\rightarrow \{0,1\}^q$ is, given $a\in\{0,1\}^p$ and $b\in\{0,1\}^q$, defined by \dots}
+{$\mathrm{DP}^f(a,b)=\Pr_{X\in _U \{0,1\}^p} [f(X\oplus a)=f(X\oplus b)] $.}
+{$\mathsf{DP}^f(a,b)=\Pr_{X\in _U \{0,1\}^p} [f(X)\oplus a=f(X)\oplus b] $.}
+{$\mathsf{DP}^f(a,b)=\Pr_{X\in _U \{0,1\}^p} [f(X\oplus b)=f(X)\oplus a] $.}
+{$\mathsf{DP}^f(a,b)=\Pr_{X\in _U \{0,1\}^p} [f(X\oplus a)=f(X)\oplus b] $."}
+
+\question[1]{For any function $f:\{0,1\}^p\rightarrow \{0,1\}^q$ and for any $a\in\{0,1\}^p$, we have\ldots}
+{$\Sigma _{b\in \{0,1\}^q}\mathsf{DP}^f(a,b)=1$}
+{$\Sigma _{b\in \{0,1\}^q}\mathsf{DP}^f(a,b)=0$}
+{$\Sigma _{b\in \{0,1\}^q}\mathsf{DP}^f(a,b)=\frac{1}{2}$}
+{$\Sigma _{b\in \{0,1\}^q}\mathsf{DP}^f(a,b)=\frac{1}{\sqrt{2}}$"}
+
+\question[2]{A differential cryptanalysis is \dots}
+{a known plaintext attack.}
+{a chosen plaintext attack.}
+{a known ciphertext attack.}
+{a chosen ciphertext attack."}
+
+\question[2]{The number of plaintext/ciphertext pairs required for a differential cryptanalysis is\dots}
+{$\approx \mathsf{DP}$}
+{$\approx \frac{1}{\mathsf{DP}}$}
+{$\approx \frac{1}{\mathsf{DP}^2}$}
+{$\approx \log \frac{1}{\mathsf{DP}}$"}
+
+\question[1]{The linear probability of a function $f:\{0,1\}^p\rightarrow \{0,1\}^q$ is, given $a\in\{0,1\}^p$ and $b\in\{0,1\}^q$, defined by \dots}
+{$\mathsf{LP}^f(a,b)=(2.\Pr_{X\in _U \{0,1\}^p} [a\cdot X=b\cdot f(X)] -1)^2$.}
+{$\mathsf{LP}^f(a,b)=(2.\Pr_{X\in _U \{0,1\}^p} [a\cdot X=f(b\cdot X)] -1)^2$.}
+{$\mathsf{LP}^f(a,b)=(2.\Pr_{X\in _U \{0,1\}^p} [a\oplus X=b\oplus f(X)] -1)^2$.}
+{$\mathsf{LP}^f(a,b)=(2.\Pr_{X\in _U \{0,1\}^p} [a\cdot X=f(b\oplus X)] -1)^2$."}
+
+\question[2]{The number of plaintext/ciphertext pairs required for a linear cryptanalysis is\dots}
+{$\approx \mathsf{LP}$}
+{$\approx \frac{1}{\mathsf{LP}}$}
+{$\approx \frac{1}{\mathsf{LP}^2}$}
+{$\approx \log \frac{1}{\mathsf{LP}}$"}
+
+\question[1]{Consider the cipher defined using the key $K\in \{0,1\}^{64} $ by $$\begin{array}{llll} C : & \{0,1\}^{64} & \rightarrow & \{0,1\}^{64} \\ & x & \mapsto & C(x)=x \oplus K \\ \end{array} $$ Let $x=1\dots 11$, the value $\mathsf{LP}^{C_K}(x,x)$ is equal to}
+{$0$}
+{$1/4$}
+{$1/2$}
+{$1$"}
+
+\question[1]{Tick the $ \textbf{true} $ assertion. A distinguishing attack against a block cipher\dots}
+{is a probabilistic attack.}
+{succeeds with probability $1$.}
+{outputs the secret key.}
+{succeeds with probability $0$."}
+
+\question[3]{Consider the cipher defined by $$\begin{array}{llll} C : & \{0,1\}^{4} & \rightarrow & \{0,1\}^{4} \\ & x & \mapsto & C(x)=x \oplus 0110 \\ \end{array} $$ Let $a\in\{0,1\}^{4}$, the value $DP^C(a,a)$ is equal to}
+{$0$}
+{$1/4$}
+{$1$}
+{$a$"}
+
+\question[4]{Consider the cipher defined by $$\begin{array}{llll} C : & \{0,1\}^{4} & \rightarrow & \{0,1\}^{4} \\ & x & \mapsto & C(x)=x \oplus 0110 \\ \end{array} $$ The value $LP^C(1,1)$ is equal to}
+{$0$}
+{$1/4$}
+{$1/2$}
+{$1$"}
+
+\question[2]{The number of plaintext/ciphertext pairs required for a differential cryptanalysis is\dots}
+{$\approx DP$}
+{$\approx \frac{1}{DP}$}
+{$\approx \frac{1}{DP^2}$}
+{$\approx \log \frac{1}{DP}$"}
+
+\question[1]{Consider an arbitrary cipher $C$ and a uniformly distributed random permutation $C^*$ on $\{0,1\}^n$. Tick the $ \textbf{false} $ assertion.}
+{$\mathsf{Dec}^1(C)=0$ implies $C=C^*$.}
+{$\mathsf{Dec}^1(C)=0$ implies $[C]^1=[C^*]^1$.}
+{$\mathsf{Dec}^1(C)=0$ implies that $C$ is perfectly decorrelated at order 1.}
+{$\mathsf{Dec}^1(C)=0$ implies that all coefficients in $[C]^1$ are equal to $\frac{1}{2^n}$."}
+
+\question[2]{The number of plaintext/ciphertext pairs required for a linear cryptanalysis is\dots}
+{$\approx LP$}
+{$\approx \frac{1}{LP}$}
+{$\approx \frac{1}{LP^2}$}
+{$\approx \log \frac{1}{LP}$"}
+
+\question[1]{A cipher $C$ perfectly decorrelated at order 1 implies\dots}
+{perfect secrecy when used once.}
+{security against differential cryptanalysis.}
+{security against linear cryptanalysis.}
+{immunity to exhaustive search."}
+
+\question[2]{Consider any block cipher $C$ and a uniformly distributed random permutation $C^*$ on $\{0,1\}^\ell$. Then, for any $n \ge 1$ we always have\dots}
+{$[C^* \circ C]^n = [C]^n$}
+{$[C^* \circ C]^n = [C^*]^n$}
+{$[C^* \circ C]^n = [C]^{2n}$}
+{$[C^* \circ C]^n = [C]^n + [C^*]^n$"}
+
+\question[3]{Tick the $ \textbf{incorrect} $ assertion. For a cipher $C$, decorrelation theory says that \ldots}
+{A decorrelation $0$ of order $1$ means perfect secrecy when used once.}
+{$\mathsf{BestAdv}_n(C,C^\ast)=\frac{1}{2}\mathsf{Dec}^n_{\left|\left|\cdot\right|\right|_a}(C)$.}
+{A decorrelation $0$ of order $1$ always protects against linear cryptanalysis.}
+{$\mathsf{Dec}^n(C_1\circ C_2) \leq \mathsf{Dec}^n(C_1) \times \mathsf{Dec}^n(C_2)$, for $C_1$ and $C_2$ two independent random permutations."}
+
+\question[4]{Assume we work with $64$-bit block cipher. In differential cryptanalysis, for which of the following circuits is the output difference going to be different from the input difference?}
+{a NOT gate}
+{a XOR to a constant gate}
+{a circuit which rotates by $64$ positions to the left}
+{a linear circuit"}
+
+\question[3]{Tick the $ \textbf{incorrect} $ assertion.}
+{$\mathsf{LP}(B) = (E((-1)^B))^2$}
+{$\mathsf{LP}^f(0,0)=1$}
+{$\mathsf{DP}^f(0,b) = 0$ if and only if $b=0$}
+{$\mathsf{DP}^f(0,0)=1$"}
+
+\question[4]{Tick the $ \textbf{correct} $ assertion. Linear cryptanalysis \ldots}
+{was invented long before the Caesar cipher.}
+{is a chosen plaintext key recovery attack.}
+{requires $\frac{1}{DP}$ pairs of plaintext-ciphertext.}
+{breaks DES with $2^{43}$ known plaintexts."}
+
+\question[4]{Tick the $ \textbf{incorrect} $ assertion. In hypothesis testing \ldots}
+{the statistical distance between $P_0$ and $P_1$ gives an upper bound on the advantage of all distinguishers using a single sample.}
+{a distinguisher needs $\frac{1}{C(P_0,P_1)}$ samples in order to be able to distinguish between $P_0$ and $P_1$.}
+{a distinguisher can use a deviant property of a cipher $C$, that holds with high probability, in order to distinguish between $C$ and $C^{*}$.}
+{a distinguisher with a single sample obtains always a better advantage than one that has access to $2$ samples."}
+
+\question[1]{Given two distributions $P_0$ and $P_1$ over a discrete set $Z$, the maximal advantage of a distinguisher using a single sample is\dots}
+{$\frac{1}{2}\sum_{x\in Z} | P_0(x) - P_1(x)|$.}
+{$1 - \prod_{x\in Z}(P_0(x)-P_1(x))^2$.}
+{$1$ if $P_0 = P_1$ and $0$ otherwise.}
+{always $1$ for computationally unbounded adversaries."}
+
+\question[1]{The maximal advantage of a $ \textbf{non adaptive} $ distinguisher limited to $q$ queries between two random functions $F$ and $F^*$ is\dots}
+{$\frac{1}{2}|||[F]^q - [F^*]^q |||_{\infty}$.}
+{$\frac{1}{2}|||[F]^q - [F^*]^q |||_{a}$.}
+{always $1$ for computationally unbounded distinguishers.}
+{always better that the advantage of the best $ \textbf{adaptive} $ distinguisher."}
+
+\question[2]{Tick the $ \textbf{incorrect} $ assertion. In linear cryptanalysis,\dots}
+{one does a known plaintext attack.}
+{given a cipher $f$ and masks $a,b$, the greater $p:=\Pr_X[a\cdot X = b \cdot f(X)]$ the better the attack will perform (ex: $p = 0.2$ vs $p= 0.4$).}
+{the linear probability (LP) measures how far the probability of a deviant property is from $1/2$.}
+{a deviant property is a relation between a linear combination of input bits and a linear combination of output bits."}
+
+\question[2]{Let $C$ be a perfect cipher with $\ell$-bit blocks. Then, \dots}
+{for $x_1 \neq x_2$, $\Pr[C(x_1) = y_1, C(x_2)=y_2] = \frac{1}{2^{2\ell}}$.}
+{the size of the key space of $C$ should be at least $(2^{\ell}!)$.}
+{given pairwise independent inputs to $C$, the corresponding outputs are independent and uniformly distributed.}
+{$C$ has an order $3$ decorrelation matrix which is equal to the order $3$ decorrelation matrix of a random function."}
+
+\question[1]{In differential cryptanalysis,\dots}
+{for a function $f:\left\{ 0,1 \right\}^p \rightarrow \left\{ 0,1 \right\}^q$, for $ \textbf{any} $ $a\in\left\{ 0,1 \right\}^p$ and $b \in \left\{ 0,1 \right\}^q$, $2^p \textsf{DP}^f(a,b) =0 \bmod{2}$.}
+{one does a known plaintext attack.}
+{one studies how differences in the key impact the cipher.}
+{the best differential probability of a cipher is equal to the best linear probability of this cipher, i.e., for a cipher $C$, $\max_{a\neq 0,b}(\textsf{DP}^C(a,b))=\max_{a\neq 0,b}(\textsf{LP}^C(a,b))$."}
+
+\question[3]{Given a function $f:\left\{ 0,1 \right\}^p \rightarrow \left\{ 0,1 \right\}^q$, given $a\in\left\{ 0,1 \right\}^p$ and $b \in \left\{ 0,1 \right\}^q$, we define $DP^{f}(a,b) = \Pr_{X}[f(X \oplus a) = f(X) \oplus b]$. We have that $\ldots$}
+{$DP^f(0,b) = 1$ if and only if $b \not= 0$.}
+{$DP^f(a,a) =1$.}
+{$\sum_{a \in \{0,1\}^p} \sum_{b \in \{0,1\}^q} DP^f(a,b)= 2^p $.}
+{when $f$ is a permutation and $p=q$, $DP^f(a,0) = 1$."}
+
+\question[4]{In linear cryptanalysis,\dots}
+{one needs to do a chosen plaintext attack.}
+{one studies how the differences in the input propagate in the cipher.}
+{one chooses the deviant property with the smallest bias in order to optimize the attack.}
+{one needs to have about $\frac{1}{LP}$ pairs of plaintext-ciphertext in order to recover the correct key, where $LP$ is the linear probability of the cipher."}
+
+\question[2]{Tick the $ \textbf{correct} $ assertion. The maximum advantage of an $ \textbf{adaptive} $ distinguisher limited to $q$ queries between two random functions $F$ and $F^*$ is always\dots}
+{$\frac{1}{2}|||[F]^q - [F^*]^q |||_{\infty}$.}
+{$\frac{1}{2}|||[F]^q - [F^*]^q |||_{a}$.}
+{$1$ when $F = F^*$.}
+{lower than the advantage of the best $ \textbf{non-adaptive} $ distinguisher."}
+
+\question[1]{Given the distribution $P_0$ of a normal coin, i.e. $P_0(0)=P_0(1)=\frac{1}{2}$, and distribution $P_1$ of a biased coin, where $P_1(0)=\frac{1}{3}$ and $P_1(1) = \frac{2}{3}$ , the maximal advantage of a distinguisher using a single sample is\dots}
+{$\frac{1}{6}$.}
+{$3$.}
+{$\frac{1}{3}$.}
+{$0$."}
+
+\question[4]{Tick the $ \textbf{incorrect} $ assertion. A cipher $C$ perfectly decorrelated at order 2 implies\dots}
+{perfect secrecy when used twice.}
+{security against differential cryptanalysis.}
+{security against linear cryptanalysis.}
+{security against exhaustive search."}
+
+\question[2]{Tick the \textit{incorrect} assertion. A perfect cipher over $n$ bit blocks \ldots}
+{implements a random permutation of $\{0,1\}^n$ when used with a random key.}
+{is easy to implement in the real life for $n=128$.}
+{has a key space of size $2^n!$.}
+{produces a uniform distribution if we are limited to a single query."}
+
+\question[3]{Consider an Sbox $S:\{0,1\}^m \rightarrow \{0,1\}^m$. We have that \ldots}
+{$\mathsf{DP}^S(0,b)=1$ if and only if $S$ is a permutation.}
+{$\sum_{b\in \{0,1\}^m} \mathsf{DP}^S(a,b)$ is even.}
+{$\sum_{b\in \{0,1\}^m \backslash \{0\}} \mathsf{DP}^S(0,b)= 0$}
+{$\mathsf{DP}^S(0,b)=1$ if and only if $m$ is odd."}
+
+\question[4]{Tick the $ \textbf{incorrect} $ assertion.}
+{Linear cryptanalysis was used to break DES with $2^{43}$ known plaintexts.}
+{The approximation of the linear probability of a cipher typically relies on the Piling-up Lemma.}
+{Resistance to linear cryptanalysis does not imply resistance to differential cryptanalysis.}
+{For a function $f:\{0,1\}^p \rightarrow \{0,1\}^q$, we define $\mathsf{LP}^f(a,b) = \Pr_x[a\cdot x = b\cdot f(x)]$."}
+
+\question[2]{Consider two distributions $P_0,P_1$ with the same supports and a distinguisher $\mathcal{A}$ that makes $q$ queries. Tick the \textit{incorrect} assertion.}
+{When $q=1$, $\mathsf{Adv}(\mathcal{A})\leq d(P_0,P_1)$ where $d$ is the statistical distance.}
+{When $q>1$, $\mathsf{Adv}(\mathcal{A})\leq \frac{d(P_0,P_1)}{q}$ where $d$ is the statistical distance.}
+{When $q=1$, the strategy ``return 1 $\Leftrightarrow \frac{P_0(x)}{P_1(x)}\leq 1$'' achieves the best advantage.}
+{To achieve good advantage, we need to have $q\approx 1/C(P_0,P_1)$ where $C$ is the Chernoff information."}
+
+\question[1]{For a blockcipher $B:\{0,1\}^k\times \{0,1\}^n \rightarrow \{0,1\}^n$ that has decorrelation $Dec^q_{\| \cdot \|_{\infty}}(B,C^*)=d$ (from a perfect cipher $C^*$), the best advantage of \textit{any} distinguisher that makes $q$ queries is \ldots}
+{bounded by $d/2$.}
+{not related to $d$; we have to use the $a$-norm to get a more general result.}
+{bounded by $d$.}
+{bounded by $d-\frac{1}{2}$."}
+

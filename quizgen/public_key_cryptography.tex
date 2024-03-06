@@ -1,0 +1,321 @@
+\question[2]{Forward secrecy implies that $ \dots $}
+{the cipher is perfectly secure.}
+{even if a long term key is disclosed, the communication remains private.}
+{the secrecy of a message depends on the security of the next message.}
+{when an adversary forwards an encrypted message to an decryption oracle, the
+message remains secret.}
+
+\question[1]{Tick the \emph{false} assumption.}
+{Static Diffie-Hellman has forward secrecy.}
+{If we run the static Diffie-Hellman protocol between Alice and Bob, the
+communications will always be the same.}
+{Static Diffie-Hellman can be implemented over elliptic curves.}
+{In ephemeral Diffie-Hellman, $g^x$ and $g^y$ are discarded at the end of the
+protocol.}
+
+\question[2]{Tick the \emph{correct} assertion.}
+{The ElGamal public-key is a hash of the secret key.}
+{For the ElGamal decryption, we need to compute an exponential.}
+{The ElGamal secret key is picked at random in $\mathbb{Z}_n$, with $n = pq$ for
+$p,q$ primes. }
+{The ElGamal ciphertext is an element of $\mathbb{Z}_n^*$, with $n=pq$ for $p,q$
+primes.}
+
+\question[3]{Which of the following encryption schemes is deterministic?}
+{RSA-OAEP}
+{Plain ElGamal}
+{Plain Rabin}
+{PKCS\#1.5}
+
+\question[4]{Plain RSA (with an $\ell$-bit modulus) $ \dots $}
+{is commonly used in practice.}
+{decrypts in $O(\ell^2)$ time.}
+{encrypts in $O(\ell)$ time.}
+{has homomorphic properties.}
+
+\question[2]{Tick the \emph{correct} assertion.}
+{ElGamal encryption has a slower key-generation algorithm than RSA.}
+{ElGamal encryption is length increasing.}
+%{encrypts a message in $O(\ell^2)$.}
+{ElGamal cryptography cannot be used to sign a message.}
+{DSS is based on factoring.}
+
+ \question[3]{Tick the \emph{incorrect} assertion.}
+ {Plain RSA is deterministic.}
+ {An RSA modulus is a product of two prime numbers.}
+ {Deterministic encryption schemes always provide forward secrecy.}
+ {DSS requires public parameters.}
+ 
+ \question[4]{KEM $ \dots $}
+ {stands for Keyless Encryption Mechanism.}
+ {is a Korean encryption mechanism.}
+ {is a symmetric-key algorithm.}
+ {is a public-key algorithm.}
+
+\question[2]{Tick the \emph{incorrect} assertion.}
+{A signature scheme may provide message recovery.}
+{We don't like to use Plain RSA in practice because of its short key-length.}
+{In the Rabin cryptosystem, ambiguity in the decryption is prevented by adding redundancy in the plaintext.}
+{A trapdoor function is easy to compute in one direction, yet believed to be
+difficult to compute in the opposite direction without the trapdoor.}
+
+ \question[1]{Tick the \emph{incorrect} assertion.}
+ {Commitment schemes never use randomness.}
+ {A commitment scheme can be based on the hardness of the discrete logarithm problem.}
+ {A commitment scheme should be hiding and binding.}
+ {Perdersen Commitment uses two large primes.}
+ 
+ \question[4]{Select a protocol which differs from the rest.}
+{Key exchange}
+{Key agreenemt}
+{Key establishment}
+{Key transfer}
+
+\question[4]{Select the \emph{incorrect} statement. In ElGamal signature}
+{public parameters are a prime number $p$ and a generator $g$ of $\mathbb{Z}_p^*$}
+{the public key is $K_p = y = g^x$, where $x$ is the secret key.}
+{verification checks whether $y^rr^s=g^{H(M)}$ for signature $\sigma=(r, s)$ of the message $M$ and the hash function $H$.}
+{requires a secure channel to transfer the signature.}
+
+\question[2]{Select the \emph{correct} statement. In DSA signature, i.e., DSS}
+{the public parameter is $N = pq$, for $p$ and $q$ primes, such that $p=aq + 1$.}
+{public parameters are primes $p$ and $q$ such that $p=aq + 1$.}
+{the public parameter is a random number $N$ such that $\gcd(N, T) = 1$, where $T$ is defined by the DSS standard.}
+{does not require any public parameter.}
+
+\question[4]{Select the \emph{incorrect} statement. ECDSA}
+{is a shortcut for Elliptic Curve Digital Signature Algorithm.}
+{uses a field of finite cardinality.}
+{is defined by parameters $a$, $b$ which define the Elliptic curve equation.}
+{is insecure if the Elliptic curve equation is known to the attacker.}
+
+\question[4]{Select the \emph{incorrect} statement. Pedersen Commitment is }
+{unconditionally hiding.}
+{computationally binding.}
+{based on the hardness of the discrete logarithm problem.}
+{based on DSA.}
+
+\question[2]{Select the \emph{incorrect} statement. }
+{The non-deterministic encryption can encrypt one plaintext into many ciphertexts.}
+{The non-deterministic encryption always provides perfect secrecy.}
+{Plain RSA encryption is deterministic.}
+{ElGamal encryption is non-deterministic.}
+
+\question[1]{Select the \emph{incorrect} statement. Elliptic Curve Diffie-Hellman is }
+{based on the difficulty of factoring the polynomial of EC.}
+{based on the difficulty of computing the discrete logarithm in EC.}
+{used in Bluetooth 2.1.}
+{used for epassports.}
+
+\question[4]{Why is it not recommended to use plain RSA in practice?}
+{because of quantum computers.}
+{because of the length of the public keys.}
+{because of the trapdoor one-wayness of the RSA function.}
+{because of the homomorphic property of the RSA function.}
+
+\question[4]{The completeness property $\mathsf{Decrypt}_{K_s}(\mathsf{Encrypt}_{K_p}(m))=m$ may not be satisfied when$ \dots $}
+{the key generation algorithm is probabilistic.}
+{the message padding is probabilistic.}
+{the encryption algorithm is probabilistic.}
+{the decryption algorithm is probabilitic.}
+
+\question[3]{Tick the \emph{false} assertion. The ambiguity issue in the decryption algorithm of the Rabin cryptosystem can be solved by$ \dots $}
+{encrypting the message twice.}
+{encrypting the message appended to itself.}
+{appending some integrity checks to the message before encryption.}
+{ensuring that the other possible plaintexts make no sense.}
+
+\question[1]{Tick the \emph{false} assertion. In a plain RSA signature,$ \dots $}
+{the verifier does not need the public key if everybody agreed to use $e=2^{16}+1$.}
+{the signature has the same length as the message.}
+{the adversary can forge signatures.}
+{the message does not need to be sent along with its signature.}
+
+\question[3]{You are given the task to select the size of the prime numbers in order to generate an RSA modulus. Which value would you recommend taking in account both security and efficiency?}
+{80 bits}
+{160 bits}
+{1024 bits}
+{2048 bits}
+
+\question[4]{Which one of these digital signature schemes is \emph{not} based on the Discrete Log problem?}
+{DSA}
+{ECDSA}
+{Pointcheval-Vaudenay}
+{PKCS$\#1$v$1.5$}
+
+\question[4]{If you want to design a secure block cipher, which key size do you choose?}
+{24 bits}
+{48 bits}
+{60 bits}
+{80 bits}
+	
+
+\question[2]{You are given the task to select the size of the subgroup order for a discrete logarithm based scheme. Which value would you recommend taking in account both security and efficiency?}
+{80 bits}
+{160 bits}
+{1024 bits}
+{2048 bits}
+
+\question[1]{KEM/DEM refers to$ \dots $}
+{an encryption scheme.}
+{a digital signature scheme.}
+{a commitment scheme.}
+{a hash function.}
+
+ \question[1]{The Diffie-Hellman protocol is $ \dots $}%
+ {a key agreement protocol.}%
+ {a signature scheme.}%
+ {a hash function.}%
+ {an encryption scheme.}%
+ 
+ \question[2]{The Diffie-Hellman protocol requires at least$ \dots $}%
+ {an insecure channel.}%
+ {an authenticated channel.}%
+ {a confidential channel.}%
+ {a confidential and authenticated channel.}%
+ 
+ 
+  \question[2]{The ElGamal cryptosystem is based on$ \dots $}%
+ {nothing.}%
+ {the discrete logarithm problem.}%
+ {the RSA problem.}%
+ {the factorization problem.}%
+ 
+ \question[4]{Consider a public-key cryptosystem. Let $K_p$, $K_s$,
+   $X$, and $Y$ be respectively the public key, private key, plaintext
+   and ciphertext. Which assertion is \emph{always true}?}%
+ {$\Enc_{K_p}(\Dec_{K_s}(X))=X$}%
+ {$\Enc_{K_s}(\Dec_{K_p}(Y))=Y$}%
+ {$\Dec_{K_p}(\Enc_{K_s}(Y))=Y$}%
+ {$\Dec_{K_s}(\Enc_{K_p}(X))=X$}%
+ 
+  \question[4]{Given an RSA public key, the difficulty of recovering
+   the corresponding private key is based on$ \dots $}%
+ {nothing.}%
+ {the discrete logarithm problem.}%
+ {the Diffie-Hellman problem.}%
+ {the factorization problem.}%
+
+  \question[2]{The RSA and ElGamal protocols requires at least$ \dots $}%
+ {an insecure channel.}%
+ {an authenticated channel.}%
+ {a confidential channel.}%
+ {a confidential and authenticated channel.}%
+ 
+  \question[2]{PKCS\#1.5 is based on$ \dots $}%
+ {Diffie-Hellman.}%
+ {RSA.}%
+ {ElGamal.}%
+ {DES.}%
+ 
+  \question[3]{Tick the \emph{false} assertion.}%
+ {The ElGamal encryption is non-deterministic.}%
+ {An ElGamal ciphertext is about twice longer than an ElGamal plaintext.}%
+ {The security of ElGamal is based on the factorization problem.}%
+ {ElGamal uses public and private keys.}%
+ 
+ \question[4]{The security of RSA is based on the factorization problem. Which of these assumptions will kill RSA?}%
+{We have a cluster with $2^{10}$ computers, each with the last INTEL Xeon 3.73GHz Dual-Core processor.}%
+{We have a cluster with $2^{10}$ computers, each with the 16GB of DDR3 RAM.}%
+{We have the last Apple XServe with 4TB of hard disk.}%
+{We have a quantum computer.}%
+
+\question[3]{In practice, what is the typical size of an RSA modulus?}
+{64 bits}
+{256 bits}
+{1024 bits}
+{8192 bits}
+
+\question[3]{Diffie-Hellman refers to $ \ldots $}
+{a signature scheme.}
+{a public-key cryptosystem.}
+{a key-agreement protocol.}
+{the inventors of the RSA cryptosystem.}
+
+
+\question[4]{A digital signature scheme allows to obtain $ \ldots $}
+{a confidential channel from an authenticated one.}
+{a confidential channel from a confidential one.}
+{an authenticated channel from a confidential one.}
+{an authenticated channel from an authenticated one.}
+????
+
+\question[4]{Tick the \emph{false} assertion.} 
+ {RSA-PSS is a signature scheme.} 
+ {RSA-OAEP is an encryption scheme.} 
+ {The RSA based encryption scheme of the standard PKCS \#1 v1.5 is
+ vulnerable to a side channel attack.} 
+ {The RSA based scheme ISO/IEC 9796 is an encryption scheme.} 
+ 
+ \question[4]{Tick the \emph{true} assertion related to the ElGamal signature scheme.}
+{A signature of a given message is obtained in a deterministic way.}
+{The generator $g$ generates a subgroup of prime order.}
+{The signature verification procedure is probabilistic.}
+{The main computational cost of the signature generation is due to one modular
+exponentiation.}
+
+\question[2]{In order to implement a public-key cryptosystem in a secure way, $ \ldots $}
+{the public key must be sent on an authenticated and confidential channel.}
+{it suffices to send the public key on an authenticated channel.}
+{it suffices to send the public key on a confidential channel.}
+{the public key can be transmitted on a fully insecure communication channel.}
+
+\question[3]{For the same security level $ \ldots $}
+{Schnorr signatures are longer than ElGamal signatures.}
+{DSA signatures are longer than ElGamal signatures.}
+{DSA signatures are shorter than ElGamal signatures.}
+{RSA signatures are shorter than Schnorr signatures.}
+
+\question[1]{Retrieving the secret key from the public key in Schnorr
+  signature is equivalent to $ \ldots $}
+{the discrete logarithm problem.}
+{the factorization problem.}
+{finding a generator in the group $\mathbb{Z}_p^*$ for a prime $p$.}
+{extracting an $x$th root of an element in $\mathbb{Z}_p^*$, where $p$ is
+  prime and $x$ is a positive integer.}
+  
+  
+\question[4]{Tick the \emph{false} assertion about Diffie and Hellman.}
+ {They wrote an article entitled ``\emph{New directions in Cryptography}'' in 1976.}
+ {They introduced the notion of ``\emph{trapdoor permutation}''.}
+ {They proposed a key agreement protocol.}
+ {They invented RSA.}  
+  
+ 
+\question[2]{Consider a public key cryptosystem. The channel used to transmit
+  the public key has to be$ \dots $}
+{$ \dots $ encrypted.}
+{$ \dots $ authenticated.}
+{$ \dots $ confidential.}
+{$ \dots $ authenticated and confidential.} 
+ 
+\question[4]{Which of these attacks applies to the Diffie-Hellman key exchange
+  when the channel cannot be authenticated?}
+{Meet-in-the-middle attack}
+{Birthday Paradox}
+{Attack on low exponents}
+{Man-in-the-middle attack}
+
+
+\question[2]{Tick the \emph{incorrect} assertion.}
+	{A symmetric key of 128 bits is enough to provide security today.}
+	{An RSA key of 768 bits is enough to provide security today.}
+	{A discrete logarithm subgroup whose order has size 256 bits is enough to provide security today.}
+	{An Elliptic curve over a prime field of cardinality with 256 bits is enough to provide
+	security today.}
+	
+\question[1]{Tick the $ \textbf{asymmetric} $ primitives.}
+ {Digital Signatures}
+ {MACs}
+ {Stream Ciphers}
+ {Block Ciphers}
+
+\question[3]{A \textit{Cryptographic Certificate} is the ...}
+{ signature of the user who certifies that a public key belongs to the authority.}
+{ signature of the user who certifies that a public key belongs to the user.}
+{ signature of the authority who certifies that a public key belongs to a specific user.}
+{diploma which certifies that one has taken the Cryptography and Security Course.}
+
+ 
+	
+	

@@ -1,0 +1,403 @@
+\question[3]{Tick the $ \textbf{false} $ statement.}
+ {RSA can be accelerated by using CRT (Chinese Remainder Theorem).}
+{An isomorphism is defined as a bijective homomorphism.}
+ {The CRT states $\mathbb{Z}_{mn} \equiv \mathbb{Z}_{m} \cup \mathbb{Z}_{n}$.}
+  {The CRT implies $\varphi(mn)=\varphi(m)\varphi(n)$ for  $\mathsf{gcd}(m,n)=1$.}
+  
+  \question[4]{What is the order of 11 in $\mathbb{Z}_{37}$?}
+ {1}
+ {27}
+ {36}
+ {37}
+ 
+
+ \question[3]{Tonelli Algorithm is for ...}
+ {computing the discrete logarithm.}
+ {finding  the inverse of an element in $\mathbb{Z}$.}
+ {finding the square-root of an integer in $\mathbb{Z}_p^*$. }
+ {solving the extended Euclidean algorithm  $\mathbb{Z}$.}
+ 
+ \question[1]{Tick the \textit{wrong} assertion.}
+ {If $\Big(\frac{b}{n}\Big)=+$1 for $b \in \mathbb{Z}_n^* $, then $b$ is a quadratic residue.}
+  {If $\Big(\frac{b}{p}\Big)=+$1 for $b \in \mathbb{Z}_p^* $, then $b$ is a quadratic residue, where $p$ is prime.}
+ {If $b$ is a quadratic residue for $b \in \mathbb{Z}_n^* $, then $\Big(\frac{b}{n}\Big)=+1$.}
+ {If $b$ is a quadratic residue for $b \in \mathbb{Z}_p^* $, then $\Big(\frac{b}{p}\Big)=+1$, where $p$ is prime.}
+ 
+ \question[1]{What is $(\frac{9}{43})$? }
+ {1}
+ {-1}
+ {0}
+ {.209}
+ 
+  \question[3]{A Carmichael number $n$ ...}
+ {is a prime number.}
+ {will always pass Fermat's test for any $0 < b < n$.}
+ {verifies  that  $\forall b$, $\mathsf{gcd}(b,n)=1$ implies that $b^{n-1} \equiv 1 \ \pmod n $.}
+ {will be considered as a prime by the Miller-Rabin algorithm.}
+ 
+  \question[2]{Tick the \textit{incorrect} assertion.}
+ {$\Big(\frac{b}{p}\Big) \in \left\{ -1,0,1\right\}$.}
+ {$\Big(\frac{ab}{n}\Big) = \Big(\frac{a}{n}\Big)\Big(\frac{b}{n}\Big)$ for any $n$.}
+ {$\Big(\frac{a}{n}\Big)= \Big(\frac{a \mod n}{n}\Big)$ for $n$ odd.}
+ {$\Big(\frac{a}{n}\Big)={\Big(\frac{a}{p_1}\Big)}^{\alpha_1} \times $ \dots $ \times {\Big(\frac{a}{p_r}\Big)}^{\alpha_r}$, where $n=p_1^{\alpha_1}  \times $ \dots $ \times p_r^{\alpha_r}$, where $p_i$'s are distinct odd primes.}
+ 
+ \question[1]{$\mathbb{Z}_n^*$ ...}
+ {is a multiplicative group of cardinality $\varphi{(n)}$.}
+ {is a field of cardinality $\varphi{(n)}$.}
+ {is a ring.}
+ {contains 0 as an element.}
+ 
+ \question[4]{Tick the \textit{wrong} assertion.}
+ {Factoring is believed to be a hard problem.}
+ {Factoring is easy if we know $\varphi{(n)}$.}
+ {Computing square roots in $\mathbb{Z}_n$ can be used to factor $n$.}
+  {Discrete logarithm problem is always hard on any group.}
+  
+  
+  \question[1]{The probability that a random $\ell$-bit number is prime is roughly ...}
+ {$\frac{1}{\ell \ln2}\cdot$}
+ {$\frac{1}{\ln2}\cdot$}
+ {$\frac{\ell}{ \ln{\ell}}\cdot$}
+ {$\frac{1}{2^{\ell}}\cdot$}
+ 
+ \question[4]{Plain RSA (with an $\ell$-bit modulus) $ \dots $}
+{is commonly used in practice.}
+{decrypts in $O(\ell^2)$ time.}
+{encrypts in $O(\ell)$ time.}
+{has homomorphic properties.}
+
+\question[1]{Tick the $ \textbf{true} $ statement. }
+ {If $x \in \mathbb{Z}_n^*$ has an order of $m$, then $x^i \equiv x^{i \pmod{m}} \pmod{n} $ for all $i\in \mathbb{Z}$. }
+ {For all $x \in \mathbb{Z}_n$, we have $x^{\varphi(n)}\equiv 1 \pmod{n}$. }
+ { For all $n \geq 2$, $\mathbb{Z}_n^*$ has order of $n-1$.}
+ {For all $n \geq 2$ and all $x \in \mathbb{Z}_n$, $x$ is invertible if and only if $x$ divides $n$.}
+ 
+  \question[4]{Tick the $ \textbf{true} $ statement regarding RSA Cryptosystem.}
+ {$(e,N,\varphi(N))$ are the public parameters.}
+ {$e$ is a valid public key if $\gcd(e,N)=1$.}
+ {Encryption and decryption are performed with the same key.}
+ {$ed \equiv 1 \pmod{\varphi(N)}$.}
+ 
+  \question[2]{Tick the $ \textbf{true} $ statement.}
+ {For any $m$ and $n$,  we have $\varphi(mn)=\varphi(m)\varphi(n)$.}
+ {Chinese Remainder Theorem can be used to fasten the decryption in RSA Cryptosystem.}
+ {When $p$ is prime, $\varphi(p^a)=(p-1)p^a$.}
+ {$2x\equiv 3 \pmod{16}$ has a solution.}
+ 
+ \question[3] { Which algorithm can be typically used in order to generate a prime number?}
+ {The Left to Right Algorithm}
+{The Extended Euclidean Algorithm}
+{The Miller-Rabin Test}
+{The Tonelli Algorithm}
+
+\question[2]{ The more accurate complexity  to decide whether or not an integer $a \in \mathbb{Z}_p^*$ is a quadratic residue, where $p$ is prime is  ...}
+{$\mathcal{O}(p^2)$.}
+{$\mathcal{O}(\log{p})^2$.}
+{$\mathcal{O}(p(\log{p})^2)$.}
+{$\mathcal{O}(e^{\sqrt {\log{p} }})$.}
+
+\question[4] {The Fermat Test outputs `maybe prime' with probability which may be high given though $n$ is composite when ...}
+{$n$ is an even composite.}
+{$n$ is a Fermat number.}
+{$n$ is the multiplication of two primes.}
+{$n$ is a Charmichael number.}
+
+\question[1]{ The Factoring Problem is equivalent to ...}
+{the Computing Square Roots Problem.}
+{the RSA Decryption Problem.}
+{the Discrete Logarithm Problem.}
+{the Computing Generator Problem.}
+
+\question[2]{Tick the $ \textbf{true} $ statement.}
+{The Legendre Symbol is the generalization of the Jacobi Symbol.}
+{The complexity to compute $\left ( \frac{a}{n} \right )$ is $\mathcal{O}(\ell^2)$, where $\ell$ is the length of $a$ and $n$.}
+{If $\left ( \frac{a}{n} \right )=1$, then $a$ is a quadratic residue in $\mathbb{Z}_n^*$.}
+{For all $a$ and $b$ ($b$ odd) $\left ( \frac{a}{b} \right )=0$ if and only if  $b$ divides $a$.}
+
+\question[3] {The exponent $\lambda(21)$ of $\mathbb{Z}_{21}^*$ is ... }
+{21.}
+{12.}
+{6.}
+{3.}
+
+\question[4] {Tick the $ \textbf{false} $ statement.}
+{Computing $\lambda(n)$ implies factoring $n$.}
+{ Computing $\varphi(n)$ implies factoring $n$.}
+{ Computing  the order of any element of $\mathbb{Z}_{n}^*$ implies computing $\lambda(n)$.}
+{Computing the discrete logarithm of any element of $\mathbb{Z}_{n}^*$ implies factoring $n$.}
+
+\question[2]{The multiplication of two quadratic residues ...}
+{is not a quadratic residue.}
+{is always a quadratic residue.}
+{can be either a quadratic residue or not.}
+{ is non-invertible.}
+
+\question[2]{In RSA, we use CRT ...}
+{to speedup encryption.}
+{to speedup decryption.}
+{since it is necessary operation of the primitive.}
+{ to prove security.}
+
+\question[1]{The CRT implies}
+{$\phi(mn)=\phi(m)\phi(n)$, for $gcd(m,n)=1$.}
+{$\phi(mn)=\phi(m)+\phi(n)$, for $gcd(m,n)=1$.}
+{$\phi(mn)=\phi(m)^n$, for $m\ne n$.}
+{$\phi(mn)=\phi(m)-n$, for $m > n$.}
+
+\question[4]{The CRT states}
+ {$\mathbb{Z}_{mn} \equiv \mathbb{Z}_{m} \cup \mathbb{Z}_{n}$}
+ {$\mathbb{Z}_{mn} \equiv \mathbb{Z}_{m} \setminus \mathbb{Z}_{n}$}
+ {$\mathbb{Z}_{mn} \equiv \mathbb{Z}_{m} \cap \mathbb{Z}_{n}$}
+ {$\mathbb{Z}_{mn} \equiv \mathbb{Z}_{m} \times \mathbb{Z}_{n}$}
+ 
+ \question[3]{Given an odd prime $p$, for any $a \in \mathbb{Z}_p$ the equation}
+{$x^2 - a = 0$ always has a solution.}
+{$x^2 - a = 0$ has exactly two solutions.}
+{$x^2 - a = 0$ has at most two solutions.}
+{$x^2 - a = 0$ may have four solutions.}
+
+\question[3]{The Tonelli algorithm is}
+{a factoring algorithm.}
+{a primality testing algorithm.}
+{an algorithm for finding square roots.}
+{an algorithm for testing quadratic residuosity.}
+
+
+\question[3]{For $p$ prime and an arbitrary odd $n$, the symbol $\left( {p \over n} \right)$ denotes}
+{a binomial coefficient.}
+{the Legendre symbol.}
+{the Jacobi symbol.}
+{a fraction.}
+
+\question[4]{A Carmichael number is }
+{a prime number which cannot pass the Rabin-Miller test.}
+{a composite number which often passes the Rabin-Miller test.}
+{a prime number which cannot pass the Fermat test.}
+{a composite number which often passes the Fermat test.}
+
+\question[2]{Select the <strong>incorrect</strong> statement. Factoring }
+ {is a hard problem.}
+ {can be solved in polynomial time on a standard computer using Shor's algorithm.}
+ {is an easy problem if we have a fast algorithm for computing an order of an element.}
+ {is an easy problem if we have a fast algorithm for computing $\varphi(n)$.}
+ 
+ \question[2]{Select the <strong>incorrect</strong> statement.}
+ {$\left( {a \over p} \right) \in \{ -1, 0, 1\}$}
+ {$\left( {a \over p} \right) + \left( {b \over p} \right) $ =  $\left( {a+b \over p} \right) $}
+ {$\left( {a \over c} \right) \left( {b \over c} \right) $ =  $\left( {ab \over c} \right) $ for $c$ odd.}
+ {$\left( {a \over b} \right) $ =  $\left( {a \bmod b \over b} \right) $ for $b$ odd.}
+ 
+ \question[4]{Select the <strong>incorrect</strong> statement.}
+{The number of primes smaller than $N$ is $P(N) \approx {N\over \text{ln} N}$.}
+{$\lambda(\prod_i {p_i}^{\alpha_i}) = \text{lcm}\left( (p_1-1)p_1^{\alpha_1-1}, $ \dots $, (p_r-1)p_r^{\alpha_r-1} \right)$ for distinct primes $p_i$.}
+{The Legendre symbol defines a homomorphism from $\mathbb{Z}_p^*$ to $\{ -1,1 \}$.}
+{The Jacobi symbol  $\left( {a \over n} \right)$ can be computed using $\left( {a \over n} \right) = a^{n-1\over 2} $ for any odd $n$.}
+ 
+ \question[4]{Select the <strong>incorrect</strong> statement.}
+{An RSA modulus is a product of two different random prime numbers.}
+{A public key $(e,N)$ and a secret key $(d,N)$ satisfy relation $d = e^{-1} \pmod{\varphi(N)}$.}
+{For a public key $e$ we have $\text{gcd}(e, \varphi(N)) = 1$}
+{RSA is insecure unless $p=q$.}
+
+\question[3]{Select the <strong>incorrect</strong> statement. Euler Theorem}
+{is a generalization of Little Fermat Theorem.}
+{states that any $x \in \{0, $ \dots $, N-1 \}$ and any $k$, we have $x^{k\varphi(N)+1}=x \pmod N$, where $N=pq$ for $p$,$q$ distinct primes.}
+{gives the basis for polynomial time factoring.}
+{allows us to prove that RSA decryption works.}
+
+
+\question[3]{Select the <strong>correct</strong> statement. The Plain RSA Signature scheme}
+{has modulus $N=p^2$.}
+{has public modulus $e$ to be selected so that $\text{gcd} (e, \varphi(N)) > 1$.}
+{allows us to pick a fixed public key exponent like $e=3$ or $e=2^{16}+1$.}
+{has a secret modulus $d$ to be selected so that $e+d = 0 \pmod{\varphi(N)}$.}
+
+ \question[4]{How many generators are there in $\mathbb{Z}_n$?}%
+ {$1$}
+ {$n-1$}
+ {$n$}%
+ {$\varphi (n)$}%
+ 
+ 
+\question[4]{Let $n=pq$ where $p$ and $q$ are prime numbers. We have:}
+{$\varphi (n) = n-1$}
+{$\varphi (n) = pq$}
+{$\varphi (n) = p + q$}
+{$\varphi (n) = (p-1) (q-1)$}
+
+
+ 
+\question[4]{The Fermat test <strong>cannot</strong> output$ \dots $}
+{''prime'' for a ''composite'' number.}
+{''prime'' for a ''prime'' number.}
+{''composite'' for a ''composite'' number.}
+{''composite'' for a ''prime'' number.}
+
+\question[4]{The Miller-Rabin test <strong>cannot</strong> output$ \dots $}
+{''prime'' for a ''composite'' number.}
+{''prime'' for a ''prime'' number.}
+{''composite'' for a ''composite'' number.}
+{''composite'' for a ''prime'' number.}
+
+\question[4]{The number of prime numbers in $\{2,3,$ \dots $ ,N\}$ when $N$ increases towards the infinity tends to$ \dots $}
+{$\log N$.}
+{$N/2$.}
+{$\sqrt{N}$.}
+{$\frac{N}{\log N}$.}
+
+\question[4]{Which one of these methods does <strong>not</strong> tell us whether an integer is prime?}
+{The Miller-Rabin test.}
+{The Number Field Sieve algorithm.}
+{Shor's Algorithm.}
+{Tonelli's Algorithm.}
+
+\question[2]{The exponent of $\mathbb{Z}_{143}^\star$ is$ \dots $}
+{$1$.}
+{$60$.}
+{$120$.}
+{$142$.}
+
+\question[3]{Which one of these is <strong>not</strong> a hard computational problem?}
+{Factoring.}
+{Extracting square roots.}
+{Computing the Jacobi symbol.}
+{Computing the discrete log.}
+
+\question[1]{Compared to the plain RSA cryptosystem and for equivalent key sizes, the plain Elgamal cryptosystem has$ \dots $}
+{a simpler key generation algorithm.}
+{a simpler encryption algorithm.}
+{a simpler decryption algorithm.}
+{shorter ciphertexts.}
+
+\question[3]{Let $p$ a prime number. We always have $ \ldots $}%
+{$\varphi(p)=p$}%
+{$\varphi(p^2)=(p-1)^2$}%
+{$\varphi(p^2)=p\cdot(p-1)$}%
+{$\varphi(p)=p+1$}%
+
+\question[2]{Tick the <strong>false</strong> assertion about a Carmichael number $n$?}%
+{$n$ is a composite.}%
+{$n-1$ is always prime.}%
+{$n$ often passes the Fermat test.}%
+{The knowledge of the factorization of $n$ helps to factorize $n-1$.}%
+
+\question[4]{Let $n$ be a positive integer. The Fermat test most likely outputs ''prime'' $ \dots $}%
+{only when $n$ is prime.}%
+{only when $n$ is non-prime.}%
+{when $n$ is prime or when $n$ is not a Carmichael number.}%
+{when $n$ is prime or when $n$ is a Carmichael number.}%
+
+\question[3]{We want to generate a $\ell$-bit prime. The complexity is roughly$ \dots $}%
+{$\ell^2$}%
+{$\ell^3$}%
+{$\ell^4$}%
+{$\ell^5$}%
+
+\question[2]{Let $p$ and $q$ be two prime numbers and $n=pq$. Let $K_p=(e,n)$ and $K_s=(d,n)$ be the RSA public and private keys respectively. Recall that the encryption of a message $m$ is $c=m^e \bmod{n}$ and the decryption is $m=c^d \bmod{n}$. Which assertion is <strong>always true</strong>?}%
+{$ed=1 \pmod{n}$}%
+{$ed=1 \pmod{\varphi(n)}$}%
+{$e=d \pmod{n}$}%
+{$e=d \pmod{\varphi(n)}$}%
+ 
+ \question[1]{Let $n=pq$ with $p$ and $q$ distinct odd primes. Tick the <strong>true</strong> assertion.}
+{For any $x \in \mathbb{Z}_n^*$, we have $x^{(p-1)(q-1)} \equiv 1 \pmod{n}$. }
+{For any $x \in \mathbb{Z}_n^*$, we have $x^{p+q} \equiv 1 \pmod{n}$. }
+{For any $x \in \mathbb{Z}_n^*$, we have $x^{pq+1} \equiv 1 \pmod{n}$. }
+{For any $x \in \mathbb{Z}_n^*$, we have $x^{pq-1} \equiv 1 \pmod{n}$. }
+
+
+\question[1]{A Carmichael number $ \ldots $}
+{is a false positive (the output is ''pseudoprime'') of Fermat test.}
+{is a false negative (the output is ''composite'') of Fermat test.}
+{always corresponds to the order of a finite field.}
+{is an exponent used in the RSA cryptosystem.}
+
+\question[3]{Tick the <strong>false</strong> assertion.}
+{The Miller-Rabin test never outputs ''composite'' if the input is prime.}
+{The Fermat test never outputs ''composite'' if the input is prime.}
+{Repeating the Fermat test twice on a given composite number always leads to thesame output.}
+{The Fermat test is based on Little Fermat Theorem.}
+
+
+\question[1]{The complexities of the encryption and decryption in RSA with a
+  modulus of $s$ bits are respectively within the order of magnitude $ \ldots $}
+{$s^3$ and $s^3$} 
+{$s^4$ and $s^3$}
+ {$s^3$ and $s^4$}
+ {$s^4$ and $s^4$}
+
+ \question[1]{Let $p$ be a prime number.  What is the cardinality of $\mathbf{Z}_p$?}
+{$p$} 
+{$p-1$}
+{$\varphi(p)$}
+ {$\varphi(p-1)$}
+ 
+  \question[3]{Let $n$ be an integer.  What is the cardinality of $\mathbf{Z}^*_n$?}
+{$n$} 
+{$n-1$}
+{$\varphi(n)$}
+ {$\varphi(n-1)$}
+ 
+ \question[2]{Given that $100000000003$ is prime, what is the cardinality of $\mathbf{Z}_{200000000006}^*$?}
+{$2$} 
+{$100000000002$}
+{$100000000003$}
+{$200000000006$}
+ 
+ \question[4]{Let $p$ and $q$ be two distinct prime numbers and let $x \in \mathbf{Z}_{pq}^*$. Which of the following assertion is always true in $\mathbf{Z}_{pq}^*$?}
+{$x^{p} = 1$} 
+{$x^{q} = 1$}
+{$x^{pq} = 1$}
+{$x^{(p-1)(q-1)} = 1$} 
+
+ \question[2]{Let $(e,N)$ be the public parameters of the RSA cryptosystem. What is the advantage of taking a <strong>small</strong> value for $e$?}
+{The complexity of the parameters generation is smaller.} 
+{The complexity of the encryption step is smaller.}
+{The complexity of the decryption step is smaller.}
+{The whole system is stronger against several attacks.} 
+
+ \question[2]{Let $n$ be an integer. Tick the <strong>true</strong> assertion about the Miller-Rabin Primality Test.}
+{If the algorithms outputs $$ \texttt{prime} $$, then $n$ is definitely a prime.} 
+{If the algorithms outputs $$ \texttt{composite} $$, then $n$ is definitely <strong>not</strong> a prime.}
+{The test can be used to factorize $n$ if it is composite.}
+{The test always outputs $$ \texttt{prime} $$ if $n$ is a Carmichael number.} 
+
+\question[3]{What is the complexity of generating an RSA modulus of length $2\ell$?}
+{$O(\ell)$} 
+{$O(\ell^2)$}
+{$O(\ell^4)$}
+{$O(\ell^8)$} 
+
+\question[4]{Let $n$ be an RSA modulus. Tick the <strong>false</strong> assertion.}
+{The knowledge of $\lambda(n)$ allows to factorize $n$.}
+{The knowledge of $\lambda(n)$ allows to recover the RSA secret exponent.}
+{The knowledge of $\lambda(n)$ allows to decrypt any ciphertext encrypted with the public exponent.}
+{The knowledge of $\lambda(n)$ allows to factorize $\lambda(n)$.}
+
+
+\question[2]{Tick the $ \textbf{true} $ statement regarding $\mathbb{Z}_p^*$, where $p$ is an arbitrary prime number.}
+ {It is a group of prime order when $p>3$.}
+ {It has $\varphi(p-1)$ generators.}
+ {For any $x \in \mathbb{Z}_p^*$ we have $x^{p}=1 \pmod p$}
+ {It is isomorphic to $\mathbb{Z}_n^*$ for all $n >0$.}
+
+\question[3]{Let $n$ be any positive integer. Three of the following assertions are equivalent. Tick the remaining one.}
+{$\mathbb{Z}_n$ is a field.} 
+{$\varphi(n)=n-1 $, where $\varphi$ denotes the Euler totient function.} 
+{$n$ is a prime power.} 
+{Any element $x \in \mathbb{Z}_n \backslash \{0\}$ is invertible.}
+
+
+ \question[4]{Tick the \textit{correct} assertion.}
+ {In a finite field $K$, every element has exactly two square roots.}
+ {In a finite field $K$, 1 has exactly one square roots and it is 1.}
+ {The set of quadratic residues in $\mathbb{Z}_n$ is a field.}
+ {An element can have more than two square roots in $\mathbb{Z}_n$.}
+ 
+  \question[1]{Select the <strong>incorrect</strong> statement.}
+ {The order of an element is always multiple of the order of its group.}
+ {An ideal $I$ of commutative ring $R$ is a subgroup closed under multiplication by all elements of $R$.}
+ {Given a prime $p$, we have $a^{p} = a$ for every $a \in \mathbb{Z}_p$.}
+ {Any element of order $\varphi(n)$ is a generator of $\mathbb{Z}_n^*$.}
+ 
+ 

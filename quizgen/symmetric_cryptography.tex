@@ -1,0 +1,389 @@
+\question[1]{Consider the following pairs of AES operations. In which, the order of the two operations does <strong>not</strong> matter?}
+ {SubBytes-ShiftRows}
+ {AddRoundKey-MixColumn}
+ {SubBytes-MixColumn}
+ {SubBytes-AddRoundKey}
+ 
+  \question[3]{Tick the $ \textbf{false} $ statement regarding the DES round function.}
+ {There is an expansion operation $E$ from 32 to 48 bits.}
+{A round key is XORed to an internal register.}
+{There are $8$ identical S-boxes (substitution boxes) of size $6 \times 4$.}
+ {There is a permutation $P$ on 32-bits.}
+ 
+ \question[2]{Which mode of operation is similar to a stream cipher?}
+ {ECB}
+ {OFB}
+ {CFB}
+ {CBC}
+ 
+ 
+  \question[2]{Ciphertext stealing ... }
+ {results in the expansion  of the plaintext.}
+ {prevents the expansion of the ciphertext.}
+ {requires an additional secret key.}
+ {steals ciphertext which results in lack of encrypted data.}
+ 
+  \question[4] {Tick the <strong>false</strong> assertion.}
+ {The Rijndael design contains S-boxes.}
+ {The Rijndael design uses $\text{GF}(2^8)$ arithmetics.}
+ {The Rijndael design contains a linear layer --- ShiftRows and MixColumn.}
+ {The Rijndael design is based on one-way functions.}
+ 
+\question[3]{CCM}
+{is a block cipher.}
+{is a hash function.}
+{is an authenticated mode of operation.}
+{stands for coded ciphertext mode.}
+	
+\question[3]{What is the average complexity of exhaustive search when the key is distributed uniformly at random over $N$ keys?}
+ {$\log N$}
+ {$2^N$}
+ {$\frac{N+1}{2}$}
+ {$\sqrt{N}$}
+ 
+ \question[2]{Select the <strong>incorrect</strong> statement. The brute force attack $ \dots $}
+ {can be applicable after decades according to Moore's law.}
+ {can break a cipher with a $128$-bit key on your PC today.}
+ {has higher worst case complexity than average case complexity.}
+ {refers to a way of getting the secret key, exhaustively.}
+
+\question[1]{What are the complexities for the single-target dictionary attacks, when there are $N$ keys?}
+{Preprocessing: $N$, Memory: $N$, Time: 1 }
+{Preprocessing: $N$, Memory: $1$, Time: $N$ }
+{Preprocessing: $1$, Memory: $N$, Time: $N$ }
+{Preprocessing: $0$, Memory: $1$, Time: $\sqrt{N}$ }
+
+\question[1]{Select the <strong>incorrect</strong> statement.}
+{Double DES is much more secure than single DES.}
+{Double DES is as secure as two-key triple DES.}
+{Three-key triple DES is more secure than two-key triple DES.}
+{Multiple encryptions are not always much more secure than a single encryption.}
+
+\question[3]{Which scheme is the most secure?}
+{DES.}
+{Two-key triple DES.}
+{Three-key triple DES.}
+{Double DES.}
+	
+\question[4]{Which key size is not supported by AES?}  
+{256 bits}
+{192 bits}
+{128 bits}
+{64 bits}
+
+\question[1]{Tick the $ \textbf{false} $ statement.}
+{A5/1 is a secure block cipher.}
+ {DES uses the Feistel scheme with a non-invertible round function.}
+ {AES is a secure block cipher which is used in many cryptographic applications.}
+ {RC4 is used in WEP. }
+ 
+ \question[2]{Tick the $ \textbf{false} $ statement regarding Modes of Operation in Block ciphers.}
+{The CBC mode uses an IV value.}
+{The ECB mode is a secure way to use block ciphers using a single key.}
+{The CTR mode uses a counter which is new for every block.}
+{The OFB mode transforms a block cipher into a stream cipher.}
+
+\question[4]{In which attack scenario does the adversary ask for the decryption of selected messages? }
+{Known plaintext attack}
+{Chosen plaintext attack}
+{Ciphertext only attack}
+{Chosen ciphertext attack}
+
+\question[3]{Which cipher is AES?}
+{SAFER}
+{BLOWFISH}
+{RIJNDAEL}
+{RC5}
+
+\question[2]{A constant initialization vector (IV), i.e., same for every plaintext, can be used in the ...}
+{CTR mode.}
+ {CBC mode.}
+ {OFB mode.}
+ {ECB mode.}
+ 
+
+\question[3]{ Two-Key Triple-DES is attacked by an algorithm based on ...}
+{Birthday Paradox.}
+{AES.}
+{the Meet-in-the-Middle Attack.}
+{the Factoring.}
+
+\question[1]{The needed number of DES operations to attack DES is about ...}
+{$2^{54}.$}
+{$2^{64}.$}
+{$2^{128}.$}
+{$2^{256}.$}
+
+ \question[4]{Select the <strong>incorrect</strong> statement.}
+ {The OFB mode requires an IV.}
+ {The CBC mode requires an IV.}
+ {The CFB mode requires an IV.}
+ {The ECB mode requires an IV.}
+ 
+ 
+\question[4]{Select <strong>incorrect</strong> statement. The exhaustive search}
+{can be used to find a secret key of AES.}
+{is a brute force attack.}
+{is not applicable against perfectly secure cipher.}
+{runs in time polynomial in the length of the key.}
+
+\question[4]{Select <strong>incorrect</strong> statement. Complexity analysis of an attack consideres }
+{time complexity.}
+{memory complexity.}
+{probability of success.}
+{difficulty to understand a corresponding journal paper.}
+
+\question[3]{Select <strong>correct</strong> statement. The brute force attack}
+{is always applicable after few years according to Moore's law.}
+{should always perform better than any dedicated attack.}
+{should have exponential complexity for a good cipher.}
+{refers to an attack of an adversary against the holder of secret key.}
+
+\question[2]{Select <strong>incorrect</strong> statement. Generic attacks on DES include}
+{time memory tradeof against 2 key Triple DES.}
+{collision attack against 3 key Triple DES.}
+{meet in the middle attack against 3 key Triple DES.}
+{known plaintext attack by Van Oorschot-Wiener agains 2 key Triple DES.}
+
+\question[3]{Select <strong>incorrect</strong> statement. The complexity analysis usually considers}
+{worst case complexity of the attack.}
+{average case of the attack.}
+{best case complexity of the attack.}
+{none of the above.}
+
+\question[4]{Select <strong>incorrect</strong> statement. The brute force technique against a cipher with key $256$ bits is}
+{impossible even if we can compute without burning an energy.}
+{impossible since the number of possible keys is too high $2^{256} \approx 10^{77}$.}
+{impossible in future even if we consider Moore's law.}
+{feasible using all clusters at EPFL.}
+
+\question[4]{Why do block ciphers use modes of operation?}
+ {it is necessary for the decryption to work.}
+ {to be provably secure.}
+ {to use keys of any size.}
+ {to encrypt messages of any size.}
+ 
+ \question[3]{Which one of these is <strong>not</strong> a skeleton used to design block ciphers?}
+ {a Feistel scheme}%
+ {a Subsitution-permutation network}%
+ {a Merkle-Damg{\aa}rd construction}%
+ {a Lay-Massey Scheme}%
+ 
+
+ \question[1]{Let $f_K:\{0,1\}^k\to\{0,1\}^\ell$ be a family of functions. Under which assumption $f_K$ <strong>can not</strong> define a block cipher?}%
+ {$k > \ell$.}
+ {$k=\ell-1$.}
+ {$k=\ell$.}
+ {$k=\ell/2$.}
+
+ \question[1]{Which one of these is <strong>not</strong> a stream cipher?}%
+ {IDEA}%
+ {RC4}%
+ {A5/1}%
+ {E0}%
+ 
+ \question[3]{Tick the <strong>false</strong> assertion. Using double encryption leads to$ \dots $}
+{doubling the complexity of the Encryption algorithm.}
+{doubling the complexity of the Decryption algorithm.}
+{doubling the complexity of all the attacks against the cipher.}
+{doubling the length of the key.}
+
+\question[3]{Tick the <strong>false</strong> assertion. Two-keys triple DES$ \dots $}
+{is more secure than double encryption.}
+{is less secure than AES.}
+{is as secure as a block cipher using a key twice longer.}
+{is vulnerable to a certain variant of a meet-in-the-middle attacks.}
+
+\question[2]{If we have a $n$-bit key, 
+the attack phase with time-memory tradeoff will roughly have$ \dots $}
+{a time complexity of $1$ (constant).}
+{a time complexity of $2^{\frac{2}{3}n}$}
+{a time complexity of $2^{\frac{n}{2}}$}
+{a time complexity of $2^{n}$}
+
+\question[1]{Which one of these is the least memory consuming attack?}
+{Exhaustive search.}
+{Dictionnary attack.}
+{Time-memory tradeoff.}
+{Time-memory tradeoff with a rainbow table.}
+
+\question[3]{In the AES MixColumns procedure, a byte represents $ \ldots $}
+{a polynomial of degree less than 16 with coefficients in $\mathbf{Z}_2$}
+{a polynomial of degree less than  4 with coefficients in $\mathbf{Z}_4$}
+{a polynomial of degree less than  8 with coefficients in $\mathbf{Z}_2$}
+{an integer between 0 and 255.}
+
+\question[2]{LFSRs are used within $ \ldots $}
+{IDEA}
+{A5/1}
+{AES}
+{SAFER}
+
+
+\question[3]{What is the length in bits of the input and output of a DES S-Box respectively?}
+{6 and 6}
+{4 and 6}
+{6 and 4}
+{4 and 4}
+
+\question[2]{Tick the <strong>false</strong> assertion.}
+{A Feistel scheme is invertible even if the round functions are not injective.}
+{A Feistel scheme is not invertible if the round functions are not surjective.}
+{A Feistel scheme is an involution if the round functions are all identical.}
+{The name of Feistel schemes goes back to the LUCIFER cipher.}
+
+\question[4]{Which of the following terms represents a mode of operation which transforms a block cipher into a stream cipher?} 
+{3DES} 
+{CBC}
+{ECB} 
+{CTR}
+
+\question[2]{What is the worst-case complexity of an exhaustive key search attack against a block cipher having a 64-bit key and 128-bit blocks?}  
+{$2^{128}$}
+{$2^{64}$}
+{$2^{96}$}
+{$2^{127}$}
+
+\question[3]{Which of the following algorithms is a stream cipher?}
+{FOX}
+{IDEA}
+{RC4}
+{AES}
+
+\question[2]{Tick the true assertion.}
+{A dictionary attack requires less memory than a time-memory tradeoff.}
+{Double-DES succumbs under a Meet-in-the-Middle attack.}
+{AES is the ancestor of DES.}
+{IDEA has the same round functions as DES.}
+  
+  
+ \question[1]{One of the following ciphers is a <strong>block</strong> cipher. Which one?}
+  {AES}
+  {RC4} 
+  {A5/1}
+  {MD5}
+  
+ \question[3]{The DES key schedule$ \dots $}
+ {$ \dots $ is based on a Feistel scheme.}
+ {$ \dots $ takes as an input a key of 128 bits.}
+ {$ \dots $ generates 16 subkeys.}
+ {$ \dots $ in only used during the encryption phase, not during the decryption phase.}
+	
+\question[3]{Which of the following acronyms does not designate a mode of operation?}
+ {CBC}  
+ {CTR} 
+ {CRC}
+ {ECB}
+ 
+ 
+ \question[4]{Stream ciphers$ \dots $}
+ {$ \dots $ are intended to be implemented in software.}
+ {$ \dots $ are more secure than block ciphers, in general.}
+ {$ \dots $ use a key to encrypt and a <strong>different</strong> key to decrypt.}
+ {$ \dots $ are based on the Vernam cipher.}
+ 
+ 
+ \question[4]{Which of the following operation is not part of AES?}
+ {AddRoundKey}
+ {SubBytes}
+ {MixColumns}
+ {MulRoundKey}
+ 
+ \question[2]{Tick the <strong>false</strong> answer about the CTR mode of operation.}
+ {The CTR mode turns a block cipher into a stream cipher.}
+ {The initial clock value should always start at 0 for the encryption of two successive plaintexts.}
+ {Encryption and decryption are identical algorithms.}
+ {It can be used with any secure block cipher.}
+ 
+ \question[2]{AES$ \dots $}
+{$ \dots $ has a variable key length <strong>and</strong> a variable block length.}
+{$ \dots $ has a variable key length <strong>and</strong> a fixed block length.}
+{$ \dots $ has a fixed key length <strong>and</strong> a variable block length.}
+{$ \dots $ has a fixed key length <strong>and</strong> a fixed block length.}
+ 
+ \question[3]{An element of the finite field $\mathrm{GF}(2^8)$ is usually represented by$ \dots $}
+ {$ \dots $ one hexadecimal digit.}
+ {$ \dots $ eight bytes.}
+ {$ \dots $ two hexadecimal digits.}
+ {$ \dots $ an irreducible polynomial of degree 8.}
+ 
+\question[1]{Which of the following ciphers is based on arithmetics over the finite field $\mathrm{GF}(2^8)$?}
+{AES}
+{DES}
+{A5/1}
+{RC4}
+
+\question[1]{The Advanced Encryption Standard (AES) is based on arithmetics on$ \dots $}
+{$\mathrm{GF}(256)$} 
+{$\mathbf{Z}_{2^8}^*$} 
+{$\mathbf{Q}\setminus \{0\}$}
+{$\mathbf{Z}_{2^8}$}
+
+
+\question[1]{Select <strong>incorrect</strong> statement. }
+{The high entropy of password is ensured by hashing the password before storing.}
+{A random salt provides some level of protection against dictionary attack.}
+{A password of length $8$ characters should contain non-alphanumerical characters in order to be non-recoverable by brute force.}
+{A special purpose device can recover $56$ bit passwords in a matter of minutes.}
+
+\question[2]{Because of Moore's law, we have to$ \dots $}
+{double the size of the symmetric keys we use every 18 months.}
+{increase the size of the symmetric keys we use by 1 bit every 18 months.}
+{change an AES key every 18 months.}
+{stop using AES by 2012.}
+
+\question[4]{Which assumption(s) is (are) required during the exchange of a key which will be used by a block cipher?}%
+{Nothing.}
+{Authentication.}
+{Authentication and integrity.}
+{Confidentiality.}
+
+\question[2]{Which one is <strong>not</strong> a block cipher?}%
+{DES}
+{ECB}
+{SAFER}
+{IDEA}
+
+\question[1]{Consider a twelve-round Feistel scheme $\Psi(F^{k_1},F^{k_2},$ \dots $,F^{k_{12}})$.  Tick the <strong>minimal necessary</strong> condition for $\Psi$ to be a permutation:}%
+{$F^{k_i}$ are functions}%
+{$F^{k_i}$ are injective functions}%
+{$F^{k_i}$ are surjective functions}%
+{$F^{k_i}$ are bijective functions}%
+
+\question[2]{CBC can deal with three types of IV. Tick the <strong>false</strong> answer.}
+{A random IV sent in clear.}%
+{A secret random IV which is sent encrypted.}%
+{A non secret constant IV.}%
+{A secret IV which is part of the key.}%
+
+\question[4]{Which one is a stream cipher?}%
+{RSA}%
+{MD5}%
+{AES}%
+{RC4}%
+
+\question[3]{Stream ciphers often use a nonce to $ \dots $}%
+{simplify the key schedule.}%
+{reduce the size of the secret key.}%
+{avoid the reuse of the key stream.}%
+{improve the efficiency of the automaton.}%
+
+\question[2]{Consider Double DES and two-key Triple DES. Tick the right answer.}%
+{A meet-in-the-middle attack is useless.}%
+{A meet-in-the-middle attack breaks Double DES only.}%
+{A meet-in-the-middle attack breaks Triple DES only.}%
+{A meet-in-the-middle attack breaks Double DES and Triple DES.}%
+
+\question[3]{The worst case complexity of an exaustive search against DES is$ \dots $}%
+{$1$}%
+{$\frac{2^{64}}{2}$}%
+{$2^{56}$}%
+{$2^{64}$}%
+
+\question[1]{Which of the following attacks needs no precomputation.}%
+{Exhaustive search.}%
+{Dictionary attack.}%
+{Meet-in-the-middle attack.}%
+{A time memory tradeoff.}%
+
+

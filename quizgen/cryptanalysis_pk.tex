@@ -1,0 +1,438 @@
+\question[2]{Consider public-key/asymmetric cryptography. Tick the $ \textbf{false} $ assertion.}
+{An adversary may have access to an oracle for decryption.}
+{An adversary against the decisional Diffie-Hellman Problem (DDHP) is successful if his advantage in negligible in the security parameter.}
+{The hardness of the decisional Diffie-Hellman Problem (DDHP) is with respect to adversaries that work in polynomial time in the the security parameter.}
+{An adversary can be a deterministic algorithm."}
+
+\question[4]{Tick the $ \textbf{true} $ assertion.}
+{Plain RSA encryption is much more secure than the plain RSA signature.}
+{PKCS$\sharp$1v1.5 is provably secure.}
+{The size of the public exponent does not impact the security of broadcast RSA encryption.}
+{If the private RSA exponent is smaller than some fraction of the RSA modulus, then an attack can be exhibited."}
+
+\question[1]{Tick the $ \textbf{false} $ assertion.}
+{The RSA decryption problem is equivalent to factoring the RSA modulus.}
+{If one can factor the RSA modulus $n$, then one can find $\phi(n)$ as well.}
+{One can get $\phi(n)$ once they know the factors of $\lambda(n)$, for $n$ an RSA modulus.}
+{The study of differential fault analysis techniques eventually made RSA implementations more resilient to attacks."}
+
+\question[1]{Tick the $ \textbf{false} $ assertion.}
+{RSA key recovery is a much simpler problem than the factorization of the RSA modulus.}
+{Solving $X^2-(N-\varphi(N)+1)X+N=0$ (in $\mathbf{Z}$) gives the factors $p$ and $q$ of an RSA modulus~$N$.}
+{Formatting messages in RSA implementations can be exploited by side-channel attacks.}
+{For a small public exponent $e$, one can finds roots smaller than a fraction of the RSA modulus $N$ for some polynomials and consequently break RSA."}
+
+\question[3]{Tick the $ \textbf{true} $ assertion.}
+{PKCS$\sharp$1v1.5 is attacked passively by eavesdropping on several MACs.}
+{Today, smart cards use only symmetric techniques due to successful side-channel attacks on dedicated modular arithmetic co-processors.}
+{ISO/IEC 9796 allows to extract the message from its signature to someone who holds the public exponent $e$, but not the secret exponent $d$.}
+{One needs to use over-clocking to observe the power consumption of a device."}
+
+\question[4]{Tick the $ \textbf{true} $ assertion.}
+{The textbook form of Rabins cryptosystem can be effectively used because it is provably secure.}
+{Rabins cryptosystem is provably as secure as the discrete logarithm problem.}
+{If one can decrypt any Rabin-encrypted text with probability $4 \times p$, then they can factorize a Rabin modulus $N$ with probability ${p}$.}
+{There is a chosen ciphertext key recovery attack against Rabins cryptosystem in its textbook form."}
+
+\question[3]{Tick the $ \textbf{false} $ assertion.}
+{In its original form, the Diffie-Hellman key agreement protocol is vulnerable to an active man-in-the-middle attack.}
+{If one solves the computational Diffie-Hellman Problem (DHP), then one solves the decisional Diffie-Hellman Problem (DDHP) as well.}
+{If one can solve the DHP (the Diffie-Hellman Problem), then one can solve the DLP (Discrete Logarithm Problem) as well.}
+{In $\mathbb{Z}_n^{*}$, there are algorithms to compute discrete logarithms in time which is polynomial in $\log(n)$, for some $n$."}
+
+\question[2]{Tick the $ \textbf{true} $ assertion.}
+{It is proven that in a subgroup of $\mathbb{Z}_p^*$ of large prime order the DLP (Discrete Logarithm Problem) is hard.}
+{Diffie-Hellman key agreement protocol can be used to setup a symmetric key.}
+{DHP (the Diffie-Hellman Problem) is always hard for a class of generators in $\mathbb{Z}_p^*$.}
+{The key derivation function is applied to the final key produced in the Diffie-Hellman key agreement protocol to ensure the hardness of the computational Diffie-Hellman Problem (DHP)."}
+
+\question[4]{Tick the $ \textbf{true} $ assertion.}
+{If a smooth number divides the order of a group $G$, then the Diffie-Hellman protocol considered in $G$ is secure against universal forgeries.}
+{The ElGamal signatures with random parameters bear existential forgeries, but no universal forgery.}
+{The ElGamal decryption problem is as hard as the ElGamal Key recovery problem.}
+{An instance of the ElGamal decryption problem can be transformed into an instance of the Diffie-Hellman problem."}
+
+\question[4]{Tick the $ \textbf{false} $ assertion.}
+{The ElGamal cryptosystem encompasses a probabilistic encryption method.}
+{The ElGamal key recovery is equivalent to the discrete logarithm problem.}
+{It has been showed that one can sometimes generate ElGamal signatures without knowing the secret key.}
+{An existential forgery of the ElGamal signature is always easy, whereas a universal forgery is hard on average."}
+
+\question[4]{Tick the $ \textbf{incorrect} $ assertion.}
+{The RSA Key Recovery Problem reduces to the RSA Exponent Multiple Problem.}
+{The RSA Factorization Problem reduces to the RSA Order Problem.}
+{The RSA Order Problem reduces to the RSA Factorization Problem.}
+{The RSA Order Problem reduces to the RSA Decryption Problem."}
+
+\question[3]{Tick the $ \textbf{incorrect} $ assertion regarding Rabin without redundancy.}
+{It is vulnerable to chosen ciphertext attacks.}
+{The key recovery problem is equivalent to the decryption problem.}
+{It is provably as secure as the discrete logarithm problem in $\mathbb{Z}_N^*$.}
+{It is provably as secure as the factorization problem."}
+
+\question[1]{In which group is the discrete logarithm problem believed to be hard?}
+{In a subgroup of $\mathbb{Z}_p^*$ with large prime order.}
+{In $\mathbb{Z}_n$, where $n= pq$ for two large primes $p$ and $q$.}
+{In a group $G$ of smooth order.}
+{In $\mathbb{Z}_2^p$, for a large prime $p$."}
+
+\question[2]{Tick the $ \textbf{incorrect} $ assertion}
+{ElGamal encryption is a non-deterministic encryption scheme.}
+{The security of ElGamal is based on the factorization problem.}
+{An ElGamal ciphertext is longer than the associated plaintext.}
+{ElGamal encryption involves some randomness."}
+
+\question[4]{In which case is the DDH problem believed to be hard?}
+{In $\mathbb{Z}_p^*$.}
+{In $\mathbb{Z}_n$, where $n = pq$ for two large primes $p$ and $q$.}
+{Given an oracle that returns the least significant bit of $g^{xy}$.}
+{In a large subgroup of prime order of a regular elliptic curve."}
+
+\question[1]{Tick the $ \textbf{correct} $ assertion.}
+{The ElGamal decryption problem is equivalent to the DH problem.}
+{The ElGamal decryption problem is equivalent to the discrete logarithm problem.}
+{The ElGamal decryption problem is equivalent to the DDH problem.}
+{The ElGamal decryption problem is equivalent to the factorization problem."}
+
+\question[3]{Let $n=pq$ be a RSA modulus and let $(e,d)$ be a RSA public/private key. Tick the $ \textbf{correct} $ assertion.}
+{Finding a multiple of $\lambda(n)$ is equivalent to decrypt a ciphertext.}
+{$ed$ is a multiple of $\phi(n)$.}
+{The two roots of the equation $X^2 - (n-\phi(n)+1)X+n$ in $\mathbb{Z}$ are $p$ and $q$.}
+{$e$ is the inverse of $d$ mod $n$."}
+
+\question[4]{Tick the $ \textbf{incorrect} $ assertion.}
+{Using power analysis can sometimes help recovering the secret key.}
+{When stressed, a decryption device can make computational errors which can help recovering the secret key.}
+{Checking the time an operation takes can leak some secret information.}
+{The power consumption of a device does never change over time."}
+
+\question[1]{The Pohlig-Hellman algorithm can be used to \dots}
+{solve the DH problem when the order of the group is smooth.}
+{solve the RSA factorization problem when $p-1$ has smooth order.}
+{find square roots in $\mathbb{Z}_n$, where $n=pq$ for $p,q$ two large primes.}
+{compute the CRT of two numbers."}
+
+\question[2]{Tick the $ \textbf{incorrect} $ assertion. The security of the DH protocol requires \dots}
+{that the DL problem is hard.}
+{that the factoring problem is hard.}
+{that we use groups of prime order.}
+{a KDF function."}
+
+\question[2]{Consider public-key/asymmetric cryptography. Tick the $ \textbf{false} $ assertion.}
+{An adversary may need an oracle to decrypt a chosen ciphertext.}
+{Adversaries who use oracles are not relevant in practice.}
+{The adversary must work in polynomial time.}
+{The adversary can use random coins."}
+
+\question[1]{Tick the $ \textbf{false} $ assertion.}
+{Plain RSA encryption is to be considered with an authenticated integer channel, unlike the RSA signature scheme.}
+{A decryption attack on broadcast RSA can be mounted if the public exponent $e$ is~equal~to~$3$.}
+{In plain RSA signature, the public key is used to extract the initial message.}
+{There is the risk of side-channel attacks against specific RSA implementations."}
+
+\question[4]{Tick the $ \textbf{false} $ assertion.}
+{RSA$(e,N)$ encryption is breakable in polynomial-time if a cryptanalyst knows $\varphi(N)$.}
+{If an attacker solves RSAKRP (the RSA Key Recovery Problem), then he can mount a total break of RSA.}
+{If the RSA private exponent $d$ is known, then the prime factorization $N$ can be found in polynomial-time.}
+{RSA is secure because the factoring problem is known to be hard."}
+
+\question[2]{Tick the $ \textbf{false} $ assertion.}
+{Given a multiple of $\lambda(N)$, the corresponding instance of the RSAFP (the RSA Factoring Problem) problem can be solved.}
+{Solving $X^2-(N-\varphi(N)+1)X+N=0$ (in $\mathbf{Z}$) gives the exponents $e$ and $d$ of RSA$(e,N)$.}
+{If through RSA$(e,N)$, $C$ is the encryption of $M$ and there exists a small integer $k$ such that $C^{e^{k}} \equiv C \pmod{N}$, then $M$ can be retrieved.}
+{There is a known RSA attack, due to Coppersmith, exploiting small public exponents."}
+
+\question[4]{Tick the $ \textbf{true} $ assertion.}
+{The RSA cryptosystem is provably secure.}
+{Wiener's attack on RSA exploits the case where the public exponent $e$ is small, e.g, 201 bits.}
+{If the solver for RSAFP (the RSA Factoring Problem) calls an oracle solving RSAOP (RSA Order Problem), this oracle answers back with the factors $p, q$.}
+{Smartcards implementing the RSA signature verification with CRT can be abused to find a factor of the modulus $N$."}
+
+\question[3]{Tick the $ \textbf{false} $ assertion.}
+{It is recommended that we use RSA-OAEP rather than raw RSA encryption.}
+{ISO/IEC 9796 allows to recover the message from its signature.}
+{There is no attack against the ISO/IEC 9796.}
+{The shadow function used in the ISO/IEC 9796 is based on a permutation of bitstrings."}
+
+\question[3]{Tick the $ \textbf{false} $ assertion.}
+{The plain Rabin cryptosystem is provably as difficult to break as it is to solve the factorization problem.}
+{One can employ redundancy to protect the Rabin system against chosen-ciphertext attacks.}
+{Only the redundancy-enhanced Rabin cryptosystem is provably secure.}
+{In the Rabin cryptosystem, adding redundancy increases the probability of decrypting to the original plaintext."}
+
+\question[3]{Tick the $ \textbf{false} $ assertion.}
+{In its original form, the Diffie-Hellman key agreement protocol cannot be used to sign messages.}
+{The Diffie-Hellman key exchange protocol is to be implemented in a group where the DLP (Discrete Logarithm Problem) is intractable.}
+{It is always (i.e., in every group) necessary to compute a discrete logarithm to solve an instance of the DHP (the Diffie-Hellman Problem).}
+{The Diffie-Hellman key exchange protocol is vulnerable to a man-in-the-middle attack."}
+
+\question[2]{Tick the $ \textbf{true} $ assertion.}
+{Unlike the computational Diffie-Hellman Problem, the decisional Diffie-Hellman Problem is equally hard in every group.}
+{It is possible to solve an instance of DHP (the Diffie-Hellman Problem) using a DLP (Discrete Logarithm Problem) oracle.}
+{DHP (the Diffie-Hellman Problem) is easy in all proper subgroups of the group $\mathbf{Z}_p^{*}$, with $p$ a large prime.}
+{The Pohlig-Hellman algorithm cannot theoretically compute discrete logarithms in some $G$ of order $2^43^2$."}
+
+\question[4]{Tick the $ \textbf{true} $ assertion.}
+{If a smooth number divides the order of a group $G$, then the Diffie-Hellman protocol considered in $G$ is computationally secure.}
+{The security of the ElGamal cryptosystem is based on the integer knapsack problem.}
+{In the ElGamal cryptosystem, the public keys consist of a large prime $p$ and some arbitrary $g$ in $\mathbf{Z}^{*}_p$.}
+{The ElGamal Sign algorithm must use a fresh $k$ randomly chosen in $\mathbf{Z}^{*}_{p-1}$ for every digital signature it generates."}
+
+\question[2]{Tick the $ \textbf{false} $ assertion.}
+{Both plain RSA encryption and signature only need an authenticated integer channel.}
+{Authentication is not achieved in plain RSA signature.}
+{In plain RSA encryption, the public key is used to encrypt.}
+{In plain RSA signature, the public key is used to extract the initial message."}
+
+\question[3]{Tick the $ \textbf{false} $ assertion.}
+{RSA factorization problem reduces to RSA exponent multiple problem.}
+{RSA exponent multiple problem reduces to RSA key recovery problem.}
+{RSA key recovery problem reduces to RSA decryption problem.}
+{RSA decryption problem reduces to RSA order problem."}
+
+\question[1]{Tick the $ \textbf{true} $ assertion. Assume that $N$ is a RSA modulus.}
+{Finding a multipe of $\lambda(N)$ is equivalent to factor $N$.}
+{Finding an $e$ such that $gcd(e,\varphi(N))=1$ is equivalent to factor $N$.}
+{$ed$ is a multiple of $\lambda(N)$.}
+{Sovling $X^2-(N-\varphi(N)+1)X+N=0$ (in $\mathbf{Z}$) outputs $e$ and $d$."}
+
+\question[4]{Tick the $ \textbf{true} $ assertion.}
+{The seed in RSA-OAEP is hashed in order to mask it.}
+{No modular exponentiation is needed in RSA-OAEP.}
+{No salt is needed in RSA-PSS.}
+{The first extraction of RSA-PSS ends with the byte 188."}
+
+\question[2]{Tick the $ \textbf{false} $ assertion.}
+{ISO/IEC 9796 allows to recover the message from its signature.}
+{ElGamal signature can be used in conjuction with ISO/IEC 9796.}
+{Modular exponentiations are needed in ISO/IEC 9796.}
+{ISO/IEC 9796 signatures can be forged."}
+
+\question[3]{Tick the $ \textbf{true} $ assertion.}
+{In SPA, the involved device is stressed to produce errors during the CRT acceleration.}
+{The power consumption of a device reveals information only when stressed.}
+{Bleichenbacher's attack against PKCS$\sharp$1v1.5 is an active attack.}
+{There is no more than 8 types of side channel attacks."}
+
+\question[1]{Tick the $ \textbf{false} $ assertion.}
+{Rabin decryption problem is equivalent to the decisional DH problem.}
+{Rabin decryption problem is equivalent to the Rabin key recovery problem.}
+{Rabin decryption problem is equivalent to the factorization problem.}
+{The Rabin cryptosystem was published in 1979."}
+
+\question[3]{Tick the $ \textbf{false} $ assertion.}
+{Several decryptions are possible for a specific plain Rabin ciphertext.}
+{Redundancy solves the ambiguity issue of the Rabin cryptosystem.}
+{Rabin cryptosystem is secure if the discrete logarithm is hard.}
+{Rabin cryptosystem is prone to a chosen ciphertext attack."}
+
+\question[2]{Tick the $ \textbf{false} $ assertion.}
+{The DDH problem reduces to the DH problem.}
+{For groups with smooth orders, the DH protocol resists passive adversaries.}
+{The DH protocol is prone to an active attack.}
+{For some specific groups and generators, the DH protocol can resist passive adversaries."}
+
+\question[4]{Tick the $ \textbf{false} $ assertion.}
+{Smooth order groups should be avoided for ElGamal and for DH protocol.}
+{DDH problem reduces to the ElGamal key recovery problem.}
+{DDH problem reduces to the ElGamal decryption problem.}
+{ElGamal key recovery problem reduces to Elgamal decryption problem."}
+
+\question[4]{Which one of these attacks is not a side channel attack?}
+{sound analysis.}
+{electromagnetic fields analysis.}
+{differential fault analysis.}
+{brute force attack."}
+
+\question[4]{Tick the $ \textbf{true} $ assertion. In RSA \ldots}
+{\ldots decryption is known to be equivalent to factoring.}
+{\ldots key recovery is provably not equivalent to factoring).}
+{\ldots decryption is probabilistic.}
+{\ldots public key transmission needs authenticated and integer channel."}
+
+\question[3]{In Plain Rabin \ldots}
+{\ldots 2 square roots are outputted from the decryption algorithm.}
+{\ldots the encryption is probabilistic.}
+{\ldots the decryption might be ambiguous.}
+{\ldots redundancy is added to the plaintext."}
+
+\question[2]{Tick the $ \textbf{true} $ assertion.}
+{Rabin cryptosystem is provably secure.}
+{Rabin cryptosystem suffers from a Chosen Ciphertext Attack}
+{Rabin cryptosystem suffers from a Chosen Plaintext Attack}
+{the Chosen Plaintext Attack gets stronger when adding redundancy in the Rabin cryptosystem."}
+
+\question[4]{The Diffie-Hellman key agreement protocol \ldots}
+{\ldots was invented by Rivest, Shamir and Adleman.}
+{\ldots can be broken with a factoring oracle.}
+{\ldots resists to active adversaries.}
+{\ldots resists to passive adversaries."}
+
+\question[1]{The Diffie-Hellman Problem consists of computing \ldots}
+{\ldots $K=g^{xy}$, from $(g,X,Y)$ where $X=g^x$ and $Y=g^y$.}
+{\ldots the least integer $x$ such that $y=g^x$ from $(g,y)$ with $y\in \langle g\rangle$.}
+{\ldots $x$ such that $x^2\mod p = y$, from $(g,X,Y)$ where $X=g^x$ and $Y=g^y$.}
+{\ldots $K=xy$, from $(g,X,Y)$ where $X=g^x$ and $Y=g^y$."}
+
+\question[4]{In plain ElGamal Encryption scheme \ldots}
+{\ldots only a confidential channel is needed.}
+{\ldots only an authenticated channel is needed.}
+{\ldots only an integer channel is needed}
+{\ldots only an authenticated and integer channel is needed."}
+
+\question[2]{Tick the $ \textbf{true} $ assertion.}
+{ElGamal encryption is deterministic.}
+{ElGamal encryption is probabilistic.}
+{ElGamal decryption is probabilistic.}
+{ElGamal decryption is ambigious."}
+
+\question[3]{Tick the $ \textbf{false} $ assertion.}
+{ElGamal decryption problem is equivalent to Diffie-Hellman problem.}
+{ElGamal decryption problem can be solved with a discrete logarithm problem oracle.}
+{ElGamal key recovery problem is an $\mathcal{NP}$-hard problem.}
+{ElGamal key recovery problem is equivalent to the discrete logarithm problem."}
+
+\question[2]{In ElGamal signature scheme and over the random choice of the public parameters in the random oracle model (provided that the DLP is hard), existential forgery is \ldots}
+{\ldots impossible.}
+{\ldots hard on average.}
+{\ldots easy on average.}
+{\ldots easy."}
+
+\question[1]{In ElGamal signature scheme, if we avoid checking that $0 \leq r < p$ then \ldots}
+{\ldots a universal forgery attack is possible.}
+{\ldots an existential forgery attack is avoided.}
+{\ldots we can recover the secret key.}
+{\ldots we need to put a stamp on the message."}
+
+\question[2]{In order to avoid the Bleichenbacher attack in ElGamal signatures, \ldots}
+{\ldots authors should put their name in the message.}
+{\ldots groups of prime order should be used.}
+{\ldots groups of even order should be used.}
+{\ldots groups with exponential number of elements should be used."}
+
+\question[1]{Tick the $ \textbf{false} $ assertion.}
+{The Diffie-Hellman key agreement protocol cannot be used to set up a session key between two parties.}
+{In Diffie-Hellman key agreement and in ElGamal signatures, groups with smooth orders leads to insecurity.}
+{ElGamal is an Egyptian cryptographer born in 1955.}
+{The Diffie-Hellman key agreement protocol was first published in 1976."}
+
+\question[4]{Tick the $ \textbf{incorrect} $ assertion.}
+{The magnitude of the secret exponent impacts the security of RSA.}
+{A power analysis attack on RSA can sometimes help to recover the secret key.}
+{Differential fault attacks exploit computational errors to find an RSA secret key.}
+{An RSA instance with public exponent $e = 3$ is vulnerable to the Wiener attack."}
+
+\question[2]{Tick the $ \textbf{incorrect} $ assertion.}
+{The RSA key recovery problem is equivalent to the RSA exponent multiple problem (RSAKRP $\Leftrightarrow$ RSAEMP).}
+{The RSA factorization problem reduces to the RSA decryption problem (RSADP $\Rightarrow$ RSAFP).}
+{The RSA order problem reduces to the RSA exponent multiple problem (RSAEMP $\Rightarrow$ RSAOP) .}
+{The RSA order problem is equivalent to the RSA key recovery problem (RSAOP $\Leftrightarrow$ RSAKRP)."}
+
+\question[3]{Assume we are in a group $G$ of order $n = p_1^{\alpha_1} p_2^{\alpha_2}$, where $p_1$ and $p_2$ are two distinct primes and $\alpha_1, \alpha_2 \in \mathbb{N}$. The complexity of applying the Pohlig-Hellman algorithm for computing the discrete logarithm in $G$ is \ldots ($ \textbf{choose the most accurate answer} $):}
+{$\mathcal{O}(\alpha_1 p_1^{\alpha_1 -1} + \alpha_2 p_2^{\alpha_2 -1})$.}
+{$\mathcal{O}(\sqrt{p_1}^{\alpha_1} + \sqrt{p_2}^{\alpha_2})$.}
+{$\mathcal{O}( \alpha_1 \sqrt{p_1} + \alpha_2 \sqrt{p_2})$.}
+{$\mathcal{O}( \alpha_1 \log{p_1} + \alpha_2 \log{p_2})$."}
+
+\question[2]{Tick the $ \textbf{true} $ assertion. In the ElGamal cryptosystem, \ldots}
+{the decryption problem is equivalent to the Decisional Diffie-Hellman problem.}
+{the key recovery problem is equivalent to the Discrete Logarithm problem.}
+{the encryption is a deterministic algorithm.}
+{the decryption problem is equivalent to the key recovery problem."}
+
+\question[3]{Tick the $ \textbf{incorrect} $ statement.}
+{The Decisional Diffie-Hellman problem is easy over $\mathbb{Z}_n$.}
+{The Discrete Logarithm problem is believed to be hard over a large subgroup of prime order of a ``regular" elliptic curve.}
+{The Decisional Diffie-Hellman problem is believed to be hard for $\mathbb{Z}_p^*$, for $p$ prime.}
+{The Discrete Logarithm problem is easy for groups of smooth order."}
+
+\question[3]{Let $s$ be a security parameter and $n$ be a constant. Which of the following functions is negligible?}
+{$1/2$.}
+{$1/s$.}
+{$1/e^s$.}
+{$1/s^n$."}
+
+\question[2]{Which of the following problems has not been shown equivalent to the others?}
+{The RSA Key Recovery Problem.}
+{The RSA Decryption Problem.}
+{The RSA Factorization Problem.}
+{The RSA Order Problem."}
+
+\question[2]{Which of the following Diffie-Hellman instance is believed to be secure?}
+{Diffie-Hellman in a subgroup of $\left\{ 0,\dots,n \right\}$ (with the addition) of prime order $q$ with $q$ a $200$-bit prime and $n$ a $2048$-bit integer.}
+{Diffie-Hellman over a subgroup of a good Elliptic curve over $Z_p$ of prime order $q$, with $q$ a $200$-bit prime and $p$ a $2048$-bit prime.}
+{Diffie-Hellman over a subgroup of $Z_p^*$ of order $q$, with $q$ a $30$-bit prime and $p$ a $2048$-bit prime.}
+{Diffie-Hellman over a subgroup of $Z_p^*$ of order $q=2^{128}(127)^{40}$, with $p$ a $2048$-bit prime."}
+
+\question[1]{Tick the $ \textbf{incorrect} $ assertion regarding plain Rabin, i.e., Rabin without any redundancy.}
+{The Rabin Key Recovery Problem relies on the discrete logarithm problem.}
+{Plain Rabin suffers from a chosen ciphertext key recovery attack.}
+{The decryption of plain Rabin is ambiguous.}
+{The Rabin Decryption Problem is equivalent to the factoring problem."}
+
+\question[1]{Tick the $ \textbf{incorrect} $ assertion.}
+{The ElGamal Decryption problem is equivalent to the Discrete Logarithm problem.}
+{The ElGamal Key Recovery problem is equivalent to the Discrete Logarithm problem}
+{If one can solve the ElGamal Decryption problem, then one can solve the Diffie-Hellman problem.}
+{If one can solve the Discrete Logarithm problem, then one can solve the ElGamal Decryption problem."}
+
+\question[4]{Tick the $ \textbf{incorrect} $ assertion.}
+{The RSA Key Recovery Problem (RSAKRP) is equivalent to the RSA Order Problem (RSAOP).}
+{The RSA Factorization Problem (RSAFP) is equivalent to the RSA Exponent Multiple Problem (RSAEMP).}
+{The RSA Decryption Problem (RSADP) is thought to be NOT equivalent to the RSA Factorization Problem (RSAFP).}
+{The RSA Order Problem (RSAOP) is thought to be NOT equivalent to the RSA Exponent Multiple Problem (RSAEMP)."}
+
+\question[3]{Which of the following RSA instances is secure for encrypting one message, that has the same size as the modulus, once? We assume that we have $N= pq$, where $p$ and $q$ are two different primes.}
+{$p$ and $q$ are of 1024 bits and the adversary knows a square root of $1$ in $\mathbb{Z}_N^*$ that is different from $1$ and $-1$.}
+{$p$ and $q$ are of 1024 bits and the secret exponent $d$ is smaller than $2^{16}$.}
+{$p$ and $q$ are of 1024 bits and $e =3$.}
+{$p$ and $q$ are of 128 bits and the secret exponent $d> \sqrt[4]{N}$."}
+
+\question[1]{To how many plaintexts we expect to decrypt a ciphertext in the Rabin cryptosystem when we don't use redundancy?}
+{4.}
+{2.}
+{1.}
+{8."}
+
+\question[4]{Tick the $ \textbf{incorrect} $ assertion.}
+{If we can solve the Discrete Logarithm Problem (DLP), then we can solve the Diffie-Hellman Problem (DHP).}
+{If we can solve the Diffie-Hellman Problem (DHP), then we can solve the Decisional Diffie-Hellman Problem (DDHP).}
+{If we can solve the Discrete Logarithm Problem (DLP), then we can solve the ElGamal Key Recovery Problem (EGKRP).}
+{If we can solve the ElGamal Decryption Problem (EGDP), then we can solve the Discrete Logarithm Problem (DLP)."}
+
+\question[4]{Tick the $ \textbf{correct} $ assertion.}
+{In ElGamal encryption scheme, the ElGamal Key Recovery Problem (EGKRP) is equivalent to the ElGamal Decryption Problem (EGDP).}
+{In ElGamal encryption scheme, the encryption is deterministic.}
+{In ElGamal signature scheme, the key recovery is equivalent to the Diffie-Hellman Problem (DHP).}
+{In ElGamal signature scheme, if we forget checking $0 \leq r < p$, then a universal forgery attack is possible."}
+
+\question[4]{Tick the \textit{incorrect} assertion. Given an RSA public key $(e,N)$, we \textit{can} efficiently compute square roots in $\mathbb{Z}_{N}^*$ if we have an efficient algorithm that \ldots}
+{factors $N$.}
+{recovers the corresponding secret key $d$.}
+{computes $\varphi(N)$, the order of $\mathbb{Z}_N^*$.}
+{given a $y\in \mathbb{Z}_N$ computes an $x$ such that $x^e \equiv y \pmod{N}$."}
+
+\question[2]{Tick the \textit{incorrect} assertion. Consider a device that is running a software implementation of the PKCS\#1v1.5 RSA cryptosystem.}
+{Analysing the power consumption of the device during decryption may be used to help recover the secret key.}
+{Inducing computational errors in the device during encryption may help recover the secret key.}
+{Issues related to message formatting may be used to help recover the secret key.}
+{Measuring the timing of the decryption computation may be used to help recover the secret key."}
+
+\question[3]{In which of the following groups is the decisional Diffie-Hellman problem (DDH) believed to be hard?}
+{In $\mathbb{Z}_p$, with a large prime $p$.}
+{In large subgroup of smooth order of a ``regular'' elliptic curve.}
+{In a large subgroup of prime order of $\mathbb{Z}_p^*$, such that $p$ is a large prime.}
+{In $\mathbb{Z}_p^*$, with a large prime $p$."}
+
+\question[3]{Tick the $ \textbf{incorrect} $ assertion regarding the security of the Diffie-Hellman key exchange over a subgroup $\langle g \rangle \subset \mathbb{Z}_p^*$.}
+{$\langle g \rangle$ should have prime order.}
+{We must ensure that $X\in \langle g \rangle$ for every received $X$.}
+{The binary representation of the output of the key exchange is a uniformly distributed bitstring.}
+{We must ensure that $X\neq1$ for every received $X$."}
+
+\question[1]{Tick the $ \textbf{correct} $ assertion.}
+{The key recovery problem for ElGamal cryptosystem and the key recovery problem for ElGamal signature are equivalent.}
+{The key recovery of the ElGamal cryptosystem over $\mathbb{Z}_p^*$ is equivalent to the exponent multiple problem in $\mathbb{Z}_p^*$.}
+{The encryption algorithm of ElGamal cryptosystem is deterministic.}
+{The ElGamal decryption problem is equivalent to the dicrete logarithm problem."}
+

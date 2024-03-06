@@ -1,0 +1,408 @@
+\question[2]{Tick the $ \textbf{incorrect} $ assertion.}
+{An interactive proof system for a language $L$ is $\alpha$-complete if for any $x\in L$ the probability that the proof is accepted when run by honest parties is at least $\alpha$.}
+{An interactive proof system for a language $L$ is $\alpha$-complete if for any $x\in L$ the probability that the proof is accepted when run by any dishonest prover is at most $\alpha$.}
+{In interactive proof systems, we assume no computational bounds on the prover.}
+{In interactive proof systems, we assume that the verifier is polynomially bounded."}
+
+\question[1]{Tick the $ \textbf{incorrect} $ assertion.}
+{A $\Sigma$ protocol is a Zero-knowledge proof of knowledge.}
+{In a $\Sigma$ protocol, only three messages are sent.}
+{In a $\Sigma$ protocol, the verifier has to be polynomially bounded.}
+{A $\Sigma$ protocol can be transformed into a Zero-knowledge proof."}
+
+\question[1]{Tick the $ \textbf{incorrect} $ assertion.}
+{A random oracle when queried to a fixed input $u$ twice might give different results.}
+{A random oracle is replaced by a hash function in practice.}
+{Upon a fresh query, a random oracle picks a response at random and puts it into a table.}
+{A random oracle involves some randomness."}
+
+\question[2]{Which of the following statements has been proved.}
+{$\textrm{IP} \subseteq \textrm{NP}$}
+{$\textrm{IP} = \textrm{PSPACE}$}
+{$\textrm{P} \neq \textrm{NP}$}
+{$\textrm{SAT} \in \textrm{P}$"}
+
+\question[4]{Tick the $ \textbf{correct} $ assertion regarding $\Sigma$ protocols.}
+{Using the extractor algorithm, an external user can recover the witness after two consecutive executions of the protocol.}
+{The extractor has to extract the witness $w$ given an accepted view from a $ \textbf{honest} $ prover, i.e., given $(x,a,e,z)$ where $z = \mathcal{P}(x,w,e;r_P)$ and $a = \mathcal{P}(x,w;r_P)$.}
+{The simulator simulates the behaviour of a honest verifier.}
+{In the common reference string (CRS) model, we can construct commitments out of $\Sigma$ protocols."}
+
+\question[3]{A proof system is computational-zero-knowledge if \dots}
+{for any PPT verifier and for any simulator $S$, $S$ produces an output which is hard to distinguish from the view of the protocol.}
+{there exists a PPT simulator $S$ such that for any $ \textbf{honest} $ verifier, $S$ produces an output which is hard to distinguish from the view of the verifier.}
+{for any PPT verifier, there exists a PPT simulator that produces an output which is hard to distinguish from the view of the protocol.}
+{for any $ \textbf{honest} $ verifier and for any simulator $S$, $S$ produces an output which is hard to distinguish from the view of the protocol."}
+
+\question[4]{Tick the $ \textbf{incorrect} $ assertion.}
+{A proof system which is perfect-black-box zero-knowledge is also statistical zero-knowledge.}
+{A proof system which is statistical-black-box zero-knowledge is also computational-black-box zero-knowledge.}
+{In the definition of perfect-black-box zero-knowledge, the simulator has oracle access to the verifier.}
+{A proof system which is statistical zero-knowledge is also statistical-black-box zero-knowledge."}
+
+\question[3]{Tick the $ \textbf{correct} $ assertion.}
+{A common reference string (CRS) allows to equivocate a commitment.}
+{A CRS is a random oracle.}
+{ZK proofs in the CRS model may be deniable.}
+{A common reference string is a string chosen by the verifier."}
+
+\question[4]{Tick the $ \textbf{incorrect} $ assertion.}
+{It is possible to create a signature scheme from a $\Sigma$ protocol.}
+{It is possible to create a trapdoor commitment from a $\Sigma$ protocol.}
+{It is possible to create a non-interactive zero-knowledge proof from a $\Sigma$ protocol.}
+{It is possible to create a public-key cryptosystem from a $\Sigma$ protocol."}
+
+\question[2]{Tick the $ \textbf{incorrect} $ assertion.}
+{The soundness of an interactive proof can be improved using sequential composition.}
+{To improve soundness using sequential composition, one has to accept if at least one of the runs was accepted.}
+{The completeness of an interactive proof can be improved using sequential composition.}
+{In sequential composition, we iterate a proof multiple times using fresh random coins."}
+
+\question[2]{Tick the $ \textbf{true} $ assertion.}
+{Graph-isomorphism is not in NP, but it is in IP.}
+{Any problem that is in IP is in PSPACE.}
+{It is known that IP=NP.}
+{3-coloring of graphs is not in IP."}
+
+\question[2]{Tick the $ \textbf{false} $ assertion. In an interactive proof,}
+{\ldots the completeness property does depend on the random coins of the prover.}
+{\ldots the complexity of a dishonest prover is kept within polynomial bounds.}
+{\ldots the soundness property places a threshold on the acceptance of illegitimate proofs.}
+{\ldots the complexity of the verifier is polynomial in the size of the input."}
+
+\question[3]{Tick the $ \textbf{true} $ assertion.}
+{We cannot prove P languages using an IPS (Interactive Proof System).}
+{We cannot interactively prove NP languages, but we can prove co-NP languages.}
+{Sequential composition of an IP (interactive proof) may improve the soundness threshold.}
+{Iterative composition cannot help tunning the completeness threshold."}
+
+\question[1]{Tick the $ \textbf{true} $ assertion.}
+{A black-box zero-knowledge simulator uses the verifier only as an oracle.}
+{Proofs of membership require the notion of extraction.}
+{In proofs of knowledge, the prover has input $x$ only and, in the same time, he is polynomially bounded.}
+{All IPS (Interactive Proof Systems) require the notion of ppt. simulation of a run between a possibly dishonest verifier and a honest prover."}
+
+\question[3]{Tick the $ \textbf{true} $ assertion. In a zero-knowledge interactive proof of knowledge, \ldots}
+{for any ppt verifier, any simulator can produce a transcript which is indistinguishable from the original conversation.}
+{the proof of knowledge denotes that the prover does not know why the statement is true.}
+{for any ppt verifier, there is a simulator which produces a conversation indistinguishable from the original conversation.}
+{the simulator is computationally unbounded."}
+
+\question[2]{Tick the $ \textbf{false} $ assertion.}
+{A $\Sigma$ protocol is a ZK proof of knowledge if we assume a honest verifier.}
+{A ZK proof of knowledge is a $\Sigma$ protocol.}
+{There exist $\Sigma$ protocols that can be viewed as identification schemes.}
+{In parallel composition, $\Sigma$ protocols are amplified to get better soundness thresholds."}
+
+\question[1]{Tick the $ \textbf{true} $ assertion.}
+{A $\Sigma$ protocol can be transformed in a ZK proof.}
+{ZK protocols are strengthened using, e.g., commitments to obtain $\Sigma$ protocols.}
+{A signature scheme can always be transformed into a $\Sigma$ protocol.}
+{Using CRS (common reference strings), ZK proofs become deniable."}
+
+\question[2]{Tick the $ \textbf{false} $ assertion.}
+{The signature scheme obtained by the Fiat-Shamir construction is secure against chosen-message existential forgeries in the ROM (Random Oracle Model).}
+{We can transform a ZK proof in the CRS model into a regular ZK proof by making one participant select the CRS.}
+{Results obtained using setup assumptions do not transfer nicely in practice.}
+{In practice, we use hash functions to replace a ROM (Random Oracle Model) setup."}
+
+\question[4]{Tick the $ \textbf{true} $ assertion.}
+{Hash functions cannot be constructed out of $\Sigma$ protocols.}
+{A CRS (common reference string) cannot be chosen maliciously.}
+{A CRS (common reference string) is a RO (Random Oracle).}
+{In the CRS model, we can construct commitments out of $\Sigma$ protocols."}
+
+\question[1]{Tick the $ \textbf{false} $ assertion.}
+{If a problem is $NP$-hard then it is $NP$-complete.}
+{SAT is an $NP$-complete problem.}
+{SAT $\in P$ if and only if $P$=$NP$.}
+{SAT $\in IP$."}
+
+\question[4]{Tick the $ \textbf{true} $ assertion. In an interactive proof,}
+{\ldots the completeness property does not depend on the random coins of the prover.}
+{\ldots the completeness property does not depend on the random coins of the verifier.}
+{\ldots the soundness property refers to the case where the verifier is corrupted.}
+{\ldots the complexity of the verifier is polynomial in the size of the input."}
+
+\question[2]{Tick the $ \textbf{false} $ assertion.}
+{We can interactively prove $P$ languages.}
+{We cannot interactively prove $NP$ languages.}
+{Iterative composition can bring us closer to perfect completeness of an IPS (Interactive Proof System).}
+{We can interactively prove \text{co-}$NP$ languages."}
+
+\question[3]{Tick the $ \textbf{false} $ assertion.}
+{It is known that $P$ is included in $NP$.}
+{It is known that $P$ is included in $IP$.}
+{Any co-$NP$ problem is also in $NP$.}
+{IPS (Interactive Proof Systems) can decide $PSPACE$ languages."}
+
+\question[1]{Tick the $ \textbf{true} $ assertion. In a zero-knowledge interactive proof for $L$, \ldots}
+{for any ppt verifier, there is a simulator which for any $x \in L$ produces a conversation indistinguishable from the original conversation.}
+{for any ppt verifier, for some $x \in L$, any simulated conversation is indistinguishable from the original conversation.}
+{the simulator imitates the verifier.}
+{the simulator is computationaly unbounded."}
+
+\question[3]{Tick the $ \textbf{false} $ assertion.}
+{Black-box ZK (zero knowledge) is a stronger notion than (simple) ZK.}
+{We can give a black-box ZK protocol deciding 3-COL (coloring graphs with 3 colours).}
+{The NP language has no ZK proofs.}
+{We can give a ZK protocol deciding ISO (graph isomorphisms)."}
+
+\question[4]{Tick the $ \textbf{false} $ assertion.}
+{A $\Sigma$ protocol can be a way to construct ZK proof system.}
+{$\Sigma$ protocols are a weaker notion of proof than ZK proof of knowledge.}
+{There exists a $\Sigma$ protocol to prove knowledge of the square root of a number.}
+{In parallel composition, $\Sigma$ protocols are amplified to get a better completeness threshold $\alpha$."}
+
+\question[1]{Tick the $ \textbf{true} $ assertion.}
+{The Schnorr $\Sigma$ protocol can be used to get a signature protocol.}
+{ZK protocols are strengthened using, e.g., commitments to obtain $\Sigma$ protocols.}
+{A $\Sigma$ protocol is ZK if the sampling domain for the challenge $e$ is large.}
+{The Pedersen commitment employed in ZK protocols does not use trapdoors."}
+
+\question[3]{Tick the $ \textbf{false} $ assertion.}
+{To prove correctness of a CRS (Common Reference String) setup, the ignorance of the trapdoor is exploited.}
+{ZK in the CRS model is a weaker form of ZK.}
+{After a ZK proof is completed, a verifier can usually prove to a third party that the proof was run.}
+{In practice, we can use hash functions to emulate a ROM (Random Oracle Model) setup."}
+
+\question[1]{Tick the $ \textbf{false} $ assertion.}
+{There is no way to have a notion of deniability in the Random Oracle Model.}
+{There is a notion of deniability in the Common Reference String setup.}
+{Hash functions can be constructed out of $\Sigma$ protocols.}
+{Commitments can be constructed out of $\Sigma$ protocols."}
+
+\question[1]{Which assertion has not been proven?}
+{SAT $\in P$.}
+{SAT is $NP$-complete.}
+{SAT $\in NP$.}
+{SAT $\in IP$."}
+
+\question[4]{Tick the $ \textbf{false} $ assertion. In an interactive proof system \ldots}
+{\ldots completeness is the probability that the honestly followed protocol completes.}
+{\ldots soundness is the probability that a malicious prover convinces a verifier on a false statement.}
+{\ldots prover and verifier are considered as interactive machines.}
+{\ldots the interaction between the verifier and the prover never terminates."}
+
+\question[3]{Iterative composition ($\sim$ repeating the same protocol with different fresh random coins) \ldots}
+{\ldots is a loss of time.}
+{\ldots does not bring any added security.}
+{\ldots can improve the completeness and soundness probability.}
+{\ldots is done to test if the verifier can predict the future."}
+
+\question[4]{Tick the assertion related to an open problem.}
+{$NP\subseteq IP$.}
+{$P\subseteq IP$.}
+{$PSPACE=IP$.}
+{$NP = \text{co-}NP$."}
+
+\question[4]{In a zero-knowledge interactive proof, the prover wants to prove :}
+{nothing.}
+{a statement without interaction.}
+{something he doesn't know.}
+{a statement without revealing anything else besides that the statement holds."}
+
+\question[2]{Graph coloring consist of coloring all vertices \ldots}
+{\ldots with a unique color.}
+{\ldots with a different color when they are linked with an edge.}
+{\ldots with a random color.}
+{\ldots with a maximum number of colors."}
+
+\question[3]{Graph coloring is \ldots}
+{\ldots $NP$-hard with 1 color.}
+{\ldots not interesting for cryptographers.}
+{\ldots an $NP$-complete problem when limited to 3 colors.}
+{\ldots always possible with 2 colors."}
+
+\question[1]{Tick the $ \textbf{false} $ assertion. A $\Sigma$ protocol is \ldots}
+{\ldots a signature scheme.}
+{\ldots a 3 move protocol.}
+{\ldots an interactive proof of knowledge.}
+{\ldots honest verifier zero-knowledge."}
+
+\question[1]{The random oracle model consists of replacing a hash function by \ldots}
+{\ldots a random oracle.}
+{\ldots a counter.}
+{\ldots a block cipher.}
+{\ldots a stateless gnome tossing a coin."}
+
+\question[4]{Tick the $ \textbf{false} $ assertion. In order to have zero-knowledge from $\Sigma$-protocols, we need to add the use of \ldots}
+{\ldots an ephemeral key $h$ and a Pedersen commitment.}
+{\ldots a common reference string.}
+{\ldots hash functions.}
+{\ldots none of the above is necessary, zero-knowledge is already contained in $\Sigma$-protocols."}
+
+\question[2]{Which class of languages includes some which cannot be proven by a polynomial-size non-interactive proof?}
+{$\mathcal{P}$}
+{$\mathcal{IP}$}
+{$\mathcal{NP}$}
+{$\mathcal{NP}\ \bigcap\ $co-$\mathcal{NP}$"}
+
+\question[4]{What has been proven so far?}
+{$\mathcal{NP} = \mathcal{P}$}
+{$\mathcal{NP}\neq \mathcal{P}$}
+{$\mathcal{NP}\subseteq \mathcal{P}$}
+{$\mathcal{NP}\supseteq \mathcal{P}$"}
+
+\question[1]{Tick the $ \textbf{true} $ assertion. SAT, the set of all satisfiable Boolean terms $r$, \ldots}
+{\ldots is in $\mathcal{NP}$}
+{\ldots is in $\mathcal{P}$}
+{\ldots is not in $\mathcal{IP}$}
+{\ldots is not $\mathcal{NP}$-complete"}
+
+\question[2]{Tick the $ \textbf{false} $ assertion.}
+{$\mathcal{NP} \subseteq \mathcal{PSPACE}$}
+{$\mathcal{IP}\ \bigcap\ \mathcal{PSPACE} = \emptyset$}
+{$\mathcal{IP} = \mathcal{PSPACE}$}
+{$\mathcal{IP} \supseteq \mathcal{PSPACE}$"}
+
+\question[3]{Tick the $ \textbf{false} $ assertion.}
+{$\mathcal{P} \subseteq ($co-$\mathcal{NP}\ \bigcap\ \mathcal{PSPACE})$}
+{$\mathcal{P} \subseteq \mathcal{IP}$}
+{$\mathcal{NP}\ \bigcap\ $co-$\mathcal{NP}=\emptyset$}
+{$\mathcal{P} \subseteq ($co-$\mathcal{NP}\ \bigcap\ \mathcal{NP})$"}
+
+\question[1]{For an interactive proof system, the difference between perfect, statistical and computational zero-knowledge is based on \ldots}
+{\ldots the distinguishability between some distributions.}
+{\ldots the percentage of recoverable information from a transcript with a honest verifier.}
+{\ldots the number of times the protocol is run between the prover and the verifier.}
+{\ldots whether the inputs are taken in $\mathcal{P}$, $\mathcal{NP}$ or $\mathcal{IP}$."}
+
+\question[3]{If we define the completeness probability of a protocol by $\alpha$ and its soundness probability by $\beta$, what is the best scenario?}
+{$\alpha=0$ and $\beta=0$}
+{$\alpha=0$ and $\beta=1$}
+{$\alpha=1$ and $\beta=0$}
+{$\alpha=1$ and $\beta=1$"}
+
+\question[4]{Tick the $ \textbf{false} $ assertion.}
+{Graph 1-coloriability can be decided in constant time.}
+{Graph 2-coloriability can be decided in linear time.}
+{Graph 3-coloriability is an $\mathcal{NP}$-complete problem.}
+{Graph $n$-coloriability implies the use of strictly more than $n$ colors."}
+
+\question[2]{The difference between an interactive proof of knowledge and an interactive proof system relies in \ldots}
+{\ldots the completeness property.}
+{\ldots the soundness property.}
+{\ldots the termination property.}
+{\ldots the names of the participants."}
+
+\question[4]{Tick the $ \textbf{false} $ assertion. $\Sigma$-protocols are \ldots}
+{\ldots interactive proof systems.}
+{\ldots interactive proof of knowledge.}
+{\ldots 3-move protocols}
+{\ldots zero-knowledge proof of knowledge."}
+
+\question[1]{Tick the $ \textbf{incorrect} $ statement. The following statements have been proven:}
+{$\textrm{SAT} \in \textrm{PSPACE} \cap \textrm{P}$}
+{$\textrm{P} \subseteq \textrm{NP} \subseteq \textrm{IP}$}
+{$\textrm{P} \subseteq \textrm{IP} \cap \textrm{NP}$}
+{$\textrm{co-NP} \subseteq \textrm{PSPACE}$"}
+
+\question[3]{A proof system is perfect-black-box zero-knowledge if \dots}
+{for any PPT verifier $V$, there exists a PPT simulator $S$, such that $S$ produces an output which is hard to distinguish from the view of the verifier.}
+{for any PPT simulator $S$ and for any PPT verifier $V$, $S^{V}$ produces an output which has the same distribution as the view of the verifier.}
+{there exists a PPT simulator $S$ such that for any PPT verifier $V$, $S^{V}$ produces an output which has the same distribution as the view of the verifier.}
+{there exists a PPT verifier $V$ such that for any PPT simulator $S$, $S$ produces an output which has the same distribution as the view of the verifier."}
+
+\question[4]{Tick the $ \textbf{correct} $ statement. $\Sigma$-protocols \ldots}
+{are defined for any language in \textrm{PSPACE}.}
+{have a polynomially unbounded extractor that can yield a witness.}
+{respect the property of zero-knowledge for any verifier.}
+{consist of protocols between a prover and a verifier, where the verifier is polynomially bounded."}
+
+\question[2]{Tick the $ \textbf{incorrect} $ statement:}
+{By enriching a $\Sigma$-protocol with commitment we can have a zero-knowledge (ZK) protocol.}
+{In random oracle model (ROM) a $\Sigma$-protocol cannot be zero-knowledge.}
+{From $\Sigma$-protocols we can construct non-interactive zero-knowledge proofs (NIZK).}
+{In common reference string (CRS) setup, we can construct commitment schemes from a $\Sigma$-protocol."}
+
+\question[3]{Tick the $ \textbf{incorrect} $ statement:}
+{Zero-knowledge interactive proofs are interactive proofs.}
+{Black-box zero-knowledge interactive proofs are zero-knowledge interactive proofs.}
+{$\Sigma$-protocols are zero-knowledge interactive proofs.}
+{$\Sigma$-protocols are interactive proofs of knowledge."}
+
+\question[1]{In an interactive proof system for a language $L$, having $\beta$-soundness means that\dots}
+{if we run the protocol with input $x\not\in L$, with a $ \textbf{malicious prover} $, and a $ \textbf{honest verifier} $ the probability that the protocol succeeds is upper-bounded by $\beta$.}
+{if we run the protocol with input $x\in L$, with a $ \textbf{malicious prover} $, and a $ \textbf{honest verifier} $ the probability that the protocol succeeds is upper-bounded by $\beta$.}
+{if we run the protocol with input $x\in L$, with a $ \textbf{honest prover} $, and a $ \textbf{malicious verifier} $ the probability that the protocol succeeds is upper-bounded by $\beta$.}
+{if we run the protocol with input $x\in L$, with a $ \textbf{honest prover} $, and a $ \textbf{honest verifier} $ the probability that the protocol succeeds is upper-bounded by $\beta$."}
+
+\question[1]{Tick the $ \textbf{incorrect} $ assertion. A random oracle\dots}
+{returns a value which is uniformly distributed and independent from the previous queries.}
+{is replaced by a hash function in practice.}
+{is a useful tool in theory.}
+{has unpredictable outputs before queries are made."}
+
+\question[1]{Tick the $ \textbf{incorrect} $ assertion.}
+{Any $\Sigma$-protocol is Zero-Knowledge.}
+{Any $\Sigma$-protocol verifies special soundness.}
+{In any $\Sigma$-protocol, the verifier runs in polynomial time.}
+{In any $\Sigma$-protocol, the simulator given $e$ (the challenge sent by the verifier) and the input $x$ produces a transcript of the protocol which has exactly the same distribution as a valid transcript using this $e$."}
+
+\question[1]{Tick the $ \textbf{incorrect} $ assertion. Using sequential composition,\dots}
+{one can make a protocol more Zero-Knowledge.}
+{one can improve the soundness of a protocol.}
+{one can improve the completeness of a protocol.}
+{one has to repeat a protocol a given number of times using fresh random coins."}
+
+\question[1]{Tick the $ \textbf{incorrect} $ assertion. One can strengthen a $\Sigma$-protocol into a Zero-Knowledge Proof of Knowledge protocol using\dots}
+{a simulator.}
+{a random oracle.}
+{a common reference string.}
+{a trapdoor commitment."}
+
+\question[3]{Tick the $ \textbf{incorrect} $ assertion. In an interactive proof system for a language $L$, having zero-knowledge implies that $\ldots$}
+{$\exists$ ppt $\mathcal{S}$ such that, for any $\mathbf{x \in L}$, $\mathcal{S}(x,r)$ produces an output indistinguishable from the view of a $ \textbf{honest verifier} $ interacting with a $ \textbf{honest prover} $.}
+{$\exists$ ppt $\mathcal{S}$ such that, for any $\mathbf{x \in L}$, $\mathcal{S}(x,r)$ produces an output indistinguishable from the view of a $ \textbf{malicious verifier} $ interacting with a $ \textbf{honest prover} $.}
+{$\exists$ ppt $\mathcal{S}$ such that, for any $\mathbf{x \not\in L}$, $\mathcal{S}(x,r)$ produces an output indistinguishable from the view of a $ \textbf{honest verifier} $ interacting with a $ \textbf{malicious prover} $.}
+{the prover proves the membership of $x$ to $L$ without revealing any secret to the verifier."}
+
+\question[4]{Tick the $ \textbf{incorrect} $ assertion.}
+{$P\subseteq NP$.}
+{$NP\subseteq IP$.}
+{$PSPACE\subseteq IP$.}
+{$NP\mbox{-hard} \subset P$."}
+
+\question[2]{Tick the $ \textbf{incorrect} $ assertion. A $\Sigma$-protocol \dots}
+{has special soundness.}
+{is zero-knowledge.}
+{is a 3-move interaction.}
+{has the verifier polynomially bounded."}
+
+\question[2]{Tick the $ \textbf{correct} $ assertion. A random oracle $\ldots$}
+{returns the same answer when queried with two different values.}
+{is instantiated with a hash function in practice.}
+{has predictable output before any query is made.}
+{answers with random values that are always independent of the previous queries."}
+
+\question[3]{Tick the \textit{correct} assertion. Given an alphabet $Z$, if a language $L \subset Z^*$ belongs to the class $\mathsf{co}\operatorname{-}\mathcal{NP}$ then \ldots}
+{there is a predicate $R$ such that $\forall x\in L$ there is a $w\in Z^*$ which satisfies $R(x,w)$, and such that $R(x,w)$ can be computed in time that is polynomial in $|x|$.}
+{there is always an algorithm $\mathcal{A}$ that, given an $x\in Z^*$, determines if $x\in L$ in time that is polynomial in $|x|$.}
+{the language $\bar{L}=\{x \in Z^* \mid x\notin L\}$ belongs to the class $\mathcal{NP}$.}
+{necessarily, $L \notin \mathcal{P}$."}
+
+\question[3]{Tick the \textit{incorrect} assertion. Let $P, V$ be an interactive system for a language $L\in \mathcal{NP}$.}
+{The proof system is $\beta$-sound if $\Pr[\text{Out}_{V}(P^* \xleftrightarrow{x} V) = \text{accept}] \leq \beta$ for any $P^*$ and any $x \notin L$.}
+{The soundness of the proof system can always be tuned close to $0$ by sequential composition.}
+{It is impossible for the proof system to be sound and zero knowledge at the same time.}
+{Both the verifier $V$ and the prover $P$ run in time that is polynomial in $|x|$, if we assume that $P$ gets the witness $w$ as an extra input."}
+
+\question[2]{Tick the \textit{correct} assertion. A sigma protocol \ldots}
+{cannot be constructed for languages in the class $\mathcal{P}$.}
+{has a special zero knowledge property that holds only against honest verifiers.}
+{has a special soundness property that holds only against honest provers.}
+{for a language $L\in \mathcal{NP}$ requires the existence of an extractor $E$ that computes the witness $w = E(x)$ for any $x\in L$ in time that is polynomial in $|x|$."}
+
+\question[2]{Tick the \textit{correct} assertion.}
+{The Common Reference String is public value that is used in $\Sigma$ protocols to break the special soundness property.}
+{A hash function is used in place of a random oracle in practice.}
+{A non-interactive proof of knowledge can never be zero knowledge in the random oracle model.}
+{A $\Sigma$ protocol can only be used to construct commitments and nothing else."}
+
+\question[1]{Consider the language $L_{\text{best}}=\{\text{``Advanced crypto is great!''}^i \mid i \in \mathbb{N}\}$. Tick an assertion.}
+{$L_{\text{best}} \in \mathcal{P}$.}
+{Every $x\in L_{\text{best}}$ has a logical value equal to $\mathsf{True}$. The bigger $|x|$, the more true it is.}
+{Only Chuck Norris can recognize $L_{\text{best}}$ in constant time. But he can recognize any language in constant time.}
+{$L_{\text{best}}$ is a very very good language. We have never seen any more bester language. It's huge."}
+
