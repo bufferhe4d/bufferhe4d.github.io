@@ -16,7 +16,7 @@ Kuantum sonrası protokollerın standardizasyonu yeni yeni bitiyor, bu sebeple k
 
 Kafes tabanlı kriptosistemler dışında diğer seçenekler üzerine daha önce çalışmadığım için maalesef diğerleri hakkında kaynak önerisinde bulunmayacağım. Kafes tabanlı kriptosistemler için Şu iki kaynak faydalı olacaktır:
 
-- [Basic Lattice Based Cryptography - Lyubashevsky](https://drive.google.com/file/d/1JTdW5ryznp-dUBBjN12QbvWz9R41NDGU/view): İlk okuma olarak bu kaynak gayet faydalı çünkü temelden başlayıp döküman içerisinde kullanılacak her şey tanımlanıyor. Sonrasında bir şifreleme ve bir dijital imza protokolü basitleştirilmiş şekilde anlatılıyor. Hem kullanılan problemlerin tanımı, hem de bu problemlerin protokollerde kullanılış şeklini en sade şekilde gösteren bir kaynak.
+- [Basic Lattice Based Cryptography - Lyubashevsky](https://github.com/VadimLyubash/LatticeTutorial/blob/main/tutorial.pdf): İlk okuma olarak bu kaynak gayet faydalı çünkü temelden başlayıp döküman içerisinde kullanılacak her şey tanımlanıyor. Sonrasında bir şifreleme ve bir dijital imza protokolü anlatılıyor. Hem kullanılan problemlerin tanımı, hem de bu problemlerin NIST tarafından standart olarak seçilen protokollerde kullanılış şeklini en sade şekilde gösteren bir kaynak.
 
 ### Nasıl İlerlerim?
 

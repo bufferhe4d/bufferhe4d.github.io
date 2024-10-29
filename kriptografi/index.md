@@ -26,7 +26,7 @@ a {
 
 ## Kriptografi Öğrenmek Üzerine
 
-<span class="post-date">2023-10-07</span>
+<span class="post-date">2024-10-29</span>
 
 Bu sayfada 2015 yılından beri kriptografi alanında çalışmaya başlama ve sonrasında çalıştığım alanı daraltma sürecinde kullandığım materyalleri organize bir şekilde toplamayı amaçlıyorum. Türkiye'deki üniversite müfredatlarına daha hakim olduğum için yazılardaki perspektif ve önerilerin Türk öğrencilere daha faydalı olmasını umuyorum. Kriptografi'nin farklı alanları için oluşturduğum her sayfada; alanın genel olarak ne tarz problemler üzerine çalıştığı hakkında ufak bir özet, sonrasında **nasıl başlarım** ve **nasıl ilerlerim** başlıkları altında materyal önerileri var. Soldaki menüden veya mobil bir cihazdan okuyorsanız üstteki "Konular" sekmesinden yazılara ulaşabilirsiniz.
 
@@ -56,8 +56,8 @@ Bu site <a href="https://github.com/casualwriter/casual-markdown">casual-markdow
 * 2023/10/08: [Temel Kriptografi](temel_kriptografi.md) {#starter}
 * 2023/10/08: [Simetrik Kriptografi](simetrik.md) {#featured}
 * 2023/10/08: [Multiparty Computation](mpc.md) {#featured}
-* 2023/10/08: [Zero-Knowledge Proofs](zk.md) {#featured}
-* 2023/10/08: [Post-Quantum Cryptography](post_quantum.md) {#featured}
+* 2024/10/29: [Zero-Knowledge Proofs](zk.md) {#featured}
+* 2024/10/29: [Post-Quantum Cryptography](post_quantum.md) {#featured}
 * 2023/10/08: [Side Channel Attacks](side_channel.md) {#featured}
 * 2023/10/08: [Matematik](matematik.md) {#alt}
 * 2023/10/08: [Teorik Bilgisayar Bilimi](tcs.md) {#alt}
