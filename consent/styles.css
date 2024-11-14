@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+.paper {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 3rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.authors {
+    text-align: center;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.author {
+    margin-bottom: 1rem;
+    flex: 1;
+    max-width: 200px;
+}
+
+.author-name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.affiliation {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+    font-style: italic;
+}
+
+.abstract {
+    margin-bottom: 3rem;
+}
+
+.abstract h2 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.abstract p {
+    text-align: justify;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.links i {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    .paper {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .authors {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .author {
+        max-width: 100%;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links a {
+        width: 80%;
+        justify-content: center;
+    }
+} 

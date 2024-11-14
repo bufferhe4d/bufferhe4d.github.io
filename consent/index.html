@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Paper</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <main class="paper">
+        <article>
+            <h1 class="title">
+                Cryptographically Secure Digital Consent
+            </h1>
+            
+            <div class="authors">
+                <div class="author">
+                    <p class="author-name">F. Betül Durak</p>
+                    <p class="affiliation">Microsoft Research</p>
+                </div>
+                <div class="author">
+                    <p class="author-name">Abdullah Talayhan</p>
+                    <p class="affiliation">EPFL</p>
+                </div>
+                <div class="author">
+                    <p class="author-name">Serge Vaudenay</p>
+                    <p class="affiliation">EPFL</p>
+                </div>
+            </div>
+
+            <div class="abstract">
+                <h2>Abstract</h2>
+                <p>
+                    In the digital age, the concept of consent for online actions executed by third parties is crucial for maintaining trust and security in third-party services. 
+This work introduces the notion of cryptographically secure digital consent, which aims to replicate the traditional consent process in the online world. 
+We provide a flexible digital consent solution that accommodates different use cases and ensures the integrity of the consent process.
+
+The proposed framework involves a client (referring to the user or their devices), an identity manager (which authenticates the client), and an agent (which executes the action upon receiving consent). 
+It supports various applications and ensures compatibility with existing identity managers. 
+We require the client to keep no more than a password. The design addresses several security and privacy challenges, including preventing offline dictionary attacks, ensuring non-repudiable consent, and preventing unauthorized actions by the agent. 
+Security is maintained even if either the identity manager or the agent is compromised, but not both.
+
+Our notion of an identity manager is broad enough to include combinations of different authentication factors such as a password, a smartphone, a security device, biometrics, or an e-passport. We demonstrate applications for signing PDF documents, e-banking, and key recovery.
+                </p>
+            </div>
+
+            <div class="links">
+                <a href="https://eprint.iacr.org/2024/1839.pdf" class="paper-link">
+                    <i class="fas fa-file"></i>
+                    Full Paper
+                </a>
+                <a href="" class="video-link">
+                    <i class="fab fa-youtube"></i>
+                    Video (TBD)
+                </a>
+                <a href="http://localhost:3000" class="demo-link">
+                    <i class="fas fa-desktop"></i>
+                    Demo
+                </a>
+            </div>
+        </article>
+    </main>
+</body>
+</html> 
